@@ -15,7 +15,7 @@ try {
     //Crear Tablas de el archivo BD/TablasBD.sql
     $pdo = new PDO($dsn, $user, $pass, $options);
     echo "Conexión exitosa<br>";
-    $file = '../BD/TablaBD.sql'; 
+    $file = '../bd/TablaBD.sql'; 
     if (!file_exists($file)) {
         throw new Exception("El archivo $file no existe.");
     }
