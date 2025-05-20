@@ -1,0 +1,154 @@
+/* Estilo para todo el documento */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo para la letra del documento */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #F8F9FA;
+}
+
+/* Contenedor principal */
+.contenedorGeneral {
+  display: flex;
+  height: 100vh;
+}
+
+/* Estilo para el logo PlayFit rojo */
+.logo {
+  width: 170px;
+  margin-bottom: 30px;
+}
+
+/* Estilos para el nav (parte izq) */
+.sidebar {
+  width: 220px;
+  background-color: #ffffff;
+  border-right: 1px solid #ddd;
+  padding: 20px;
+}
+.sidebar nav ul {
+  list-style: none;
+}
+.sidebar nav ul li {
+  margin: 30px 0;
+}
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Contenido principal */
+.contenidoPrincipal {
+  flex: 1;
+  padding: 40px;
+  overflow-y: auto;
+}
+
+/* Estilos generales para las cards */
+.contenedorDeCartas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+
+.carta {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 320px;
+}
+
+.carta:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.carta img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.infoCarta {
+  padding: 20px;
+}
+.infoCarta h3 {
+  font-size: 1.6em;
+  color: #333;
+  margin-bottom: 10px;
+}
+.infoCarta p {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.infoCarta p:last-child {
+  font-weight: bold;
+  color: #333;
+}
+
+
+@media (max-width: 700px) {
+  .contenedorGeneral {
+      flex-direction: column;
+      height: auto;
+  }
+
+  .sidebar {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+  }
+
+  .sidebar nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0;
+  }
+
+  .sidebar nav ul li {
+      margin: 10px;
+  }
+
+  .contenidoPrincipal {
+      padding: 20px;
+  }
+
+  .logo {
+      width: 130px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+      width: 100px;
+  }
+
+  .infoCarta h3 {
+      font-size: 1.3em;
+  }
+
+  .infoCarta p {
+      font-size: 0.9em;
+  }
+
+  .contenedorDeCartas {
+      grid-template-columns: 1fr;
+      padding: 10px;
+  }
+}
