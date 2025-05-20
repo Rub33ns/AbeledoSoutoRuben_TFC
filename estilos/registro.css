@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(150deg, red, white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Puede quedarse así, no afecta al diseño en px */
+}
+
+.cajaGeneral {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 500px;
+}
+
+.cajaFormulario {
+  width: 100%;
+  padding: 40px 30px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #8b0000;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  text-align: left;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="fotoPerfil"],
+input[type="email"] {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="email"]:hover {
+  border-color: #8b0000;
+  outline: none;
+}
+
+button {
+  padding: 12px;
+  background-color: #8b0000;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #5a0000;
+}
+
+p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+p a {
+  color: #8b0000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .cajaFormulario {
+    padding: 30px 20px;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  h2 {
+    font-size: 29px; 
+    margin-bottom: 20px;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="fotoPerfil"] {
+    font-size: 13px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cajaFormulario {
+    padding: 20px 15px;
+  }
+
+  .logo {
+    width: 60px;
+  }
+
+  h2 {
+    font-size: 24px; 
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="fotoPerfil"] {
+    padding: 10px;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+}
