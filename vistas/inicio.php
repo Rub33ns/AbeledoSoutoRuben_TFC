@@ -49,8 +49,6 @@ if (!isset($_SESSION['usuario'])) {
                   alt="Persona realizando el ejercicio de presión de triceps con cuerda en polea alta">
           <img src="https://cdn.shopify.com/s/files/1/0269/5551/3900/files/Bench-Dips_600x600.png?v=1619977992" 
                   alt="Persona realizando triceps pressdown con cuerda en polea alta, ejercicio para trabajar los músculos del tríceps">
-          <img src="https://cdn.shopify.com/s/files/1/0269/5551/3900/files/Single-Arm-Dumbbell-Row_600x600.png?v=1612138400" 
-                  alt="Persona realizando un remo con mancuernas a un brazo, trabajando la espalda y los músculos del core">
         </div>
         <!-- Sección para dar la bienvenida y empezar el reto -->
         <section class="bienvenida">
