@@ -9,5 +9,6 @@ CREATE TABLE usuarios (
     `nombre` VARCHAR(100) NOT NULL,
     `apellido` VARCHAR(100) NOT NULL,
     `correo` VARCHAR(150) NOT NULL UNIQUE,
-    `contrasena` VARCHAR(255) NOT NULL
+    `contrasena` VARCHAR(255) NOT NULL,
+    `imagenPerfil` VARCHAR(255) NOT NULL
 );
