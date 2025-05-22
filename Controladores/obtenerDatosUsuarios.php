@@ -5,7 +5,7 @@ try {
     //Recoger la sesión de el usuario
     $usuario = $_SESSION['usuario'];
     //Consulta para traer todos los datos de el usuario que tiene la sesión iniciada.
-    $stmt = $pdo->prepare("SELECT * FROM usuarios WHERE nombre = :usuario");
+    $stmt = $pdo->prepare("SELECT * FROM usuarios WHERE correo = :usuario");
     $stmt->execute(['usuario' => $usuario]);
     $user = $stmt->fetch();
     //En caso de error guardarlo,mostrarlo  y matar el proceso 
