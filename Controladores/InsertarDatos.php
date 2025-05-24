@@ -1,6 +1,6 @@
 <?php
 // Crear conexión con la BD
-$dsn = "mysql:host=localhost;dbname=PlayFitBD";
+$dsn = "mysql:host=db;dbname=PlayFitBD";
 $username = "root";
 $password = "";
 try {

@@ -1,5 +1,7 @@
- <!--Inicar sesión -->
-<?php session_start(); ?>
+<?php 
+session_start(); 
+?>
+<!--Iniciar sesión -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,7 +9,7 @@
   <title>PlayFit Registro</title>
   <link rel="stylesheet" href="../estilos/registro.css">
   <link rel="shortcut icon" href="../img/IconoPlayFit.png" type="image/x-icon">
-  <!--Con este scrip lo que realizo es validar los campos de el registro con diferentes patrones -->
+  <!--Con este script lo que realizo es validar los campos del registro con diferentes patrones -->
   <script src="../scripts/validarRegistro.js"></script>
 </head>
 <body>
@@ -15,12 +17,13 @@
     <div class="cajaFormulario">
       <img src="../img/LogoPlayfit.png" alt="PlayFit" class="logo">
       <h2>Crear tu cuenta</h2>
-      
-      <!-- En caso de que de error al enviar el formulario al registrar mostrar el error en rojo dentro de el formulario-->
+
+      <!-- En caso de que dé error al enviar el formulario, mostrar el error en rojo dentro del formulario-->
       <?php if (isset($_SESSION['error'])): ?>
         <p style="color: red;"><?php echo $_SESSION['error']; ?></p>
         <?php unset($_SESSION['error']); ?>
       <?php endif; ?>
+
       <form action="../controladores/registrarUsuario.php" method="POST">
         <label for="nombre">Nombre*:</label>
         <input type="text" id="nombre" name="nombre" required placeholder="Como mínimo 2 caracteres.">
@@ -39,6 +42,7 @@
 
         <label for="confirmar">Repetir contraseña*:</label>
         <input type="password" id="confirmar" name="confirmar" required placeholder="Repite la contraseña anterior.">
+        
         <!--Utilizo un checkbox para mostrar la contraseña en formato texto -->
         <p><input type="checkbox" id="verPassword" onclick="verContrasena()"> Mostrar contraseñas</p>
 

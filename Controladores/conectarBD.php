@@ -1,6 +1,6 @@
 <?php
-$host = 'localhost';
-$dbname = 'PlayfitBD';
+$host = 'db';
+$dbname = 'PlayFitBD';
 $username = 'root';
 $password = '';
 
