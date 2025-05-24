@@ -5,7 +5,7 @@ $messageClass = '';
 $botonLogin = false;
 try {
     //Conectar a la base de datos
-    $pdo = new PDO('mysql:host=localhost;dbname=PlayFitBD', 'root', '');
+    $pdo = new PDO('mysql:host=db;dbname=PlayFitBD', 'root', '');
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     // Verificar si existen datos en la tabla usuarios en caso de que si tenga datos 
@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         try {
             //Lo mismo para el controlador de añadir los datos a la tabla .
             //Si no da error mostrar el mesaje de todo correcto.
-            $pdo = new PDO('mysql:host=localhost;dbname=PlayFitBD', 'root', '');
+            $pdo = new PDO('mysql:host=db;dbname=PlayFitBD', 'root', '');
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
             include 'controladores/InsertarDatos.php';

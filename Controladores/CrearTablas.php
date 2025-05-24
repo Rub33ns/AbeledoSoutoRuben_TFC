@@ -1,7 +1,7 @@
 <?php
 //Intentar realizar la conexión con la base de datos , con los siguientes datos.
 try {
-    $host = 'localhost';
+    $host = 'db';
     $user = 'root';
     $pass = '';
     $charset = 'utf8mb4';
