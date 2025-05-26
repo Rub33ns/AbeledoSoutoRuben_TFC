@@ -35,9 +35,6 @@ if (!isset($_SESSION['usuario'])) {
     <main class="contenido-principal">
         
       <h1>Rutina Semanal</h1>
-      <div style="display: flex; justify-content: flex-end; margin-bottom: 20px;">
-        <button class="guardar-btn" onclick="guardarCambios()">Guardar Rutina</button>
-      </div>
       <div class="selector">
         <label for="categoria">Selecciona una categoría:</label>
         <select id="categoria">
@@ -56,8 +53,8 @@ if (!isset($_SESSION['usuario'])) {
 <br>
       <div class="ejercicios">
         <!--Lunes-->
-        <div class="dia flip-card">
-          <div class="flip-card-inner">
+        <div class="dia girarCarta">
+          <div class="contenidoCarta">
             <div class="parteDelantera"></div>
             <div class="parteTrasera"></div>
           </div>
