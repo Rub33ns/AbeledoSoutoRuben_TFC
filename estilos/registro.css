@@ -10,7 +10,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Puede quedarse así, no afecta al diseño en px */
+  height: 100vh; 
 }
 
 .cajaGeneral {
