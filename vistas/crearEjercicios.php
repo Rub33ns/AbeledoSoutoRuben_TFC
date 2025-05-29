@@ -15,6 +15,7 @@ $partes = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <meta charset="UTF-8">
     <title>Crear Ejercicio</title>
     <link rel="stylesheet" href="../estilos/listados.css">
+    <link rel="shortcut icon" href="../img/IconoPlayFit.png" type="image/x-icon">
 </head>
 <body>
     <div class="contenedorGeneral" style="padding: 40px;">

@@ -1,11 +1,10 @@
-/* Estilo para todo el documento */
+/* Estilo base */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Estilo para la letra del documento */
 body {
   font-family: 'Arial', sans-serif;
   background-color: #F8F9FA;
@@ -14,16 +13,17 @@ body {
 /* Contenedor principal */
 .contenedorGeneral {
   display: flex;
-  height: 100vh;
+  flex-direction: row;
+  min-height: 100vh;
 }
 
-/* Estilo para el logo PlayFit rojo */
+/* Logo */
 .logo {
   width: 170px;
   margin-bottom: 30px;
 }
 
-/* Estilos para el nav (parte izq) */
+/* Sidebar */
 .sidebar {
   width: 220px;
   background-color: #ffffff;
@@ -44,12 +44,23 @@ body {
 
 /* Contenido principal */
 .contenidoPrincipal {
-  flex: 1;
-  padding: 40px;
-  overflow-y: auto;
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #ffffff;
 }
 
-/* Estilos generales para las cards */
+/* Botón */
+.boton-crear {
+  display: inline-block;
+  background-color: red;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Cartas */
 .contenedorDeCartas {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -75,80 +86,84 @@ body {
 
 .carta img {
   width: 100%;
-  height: auto;
+  height: 350px; 
   object-fit: cover;
 }
 
 .infoCarta {
-  padding: 20px;
+  padding: 10px;
 }
+
 .infoCarta h3 {
-  font-size: 1.6em;
-  color: #333;
-  margin-bottom: 10px;
+  margin: 5px 0;
+  font-size: 18px;
 }
+
 .infoCarta p {
-  font-size: 1em;
+  margin: 4px 0;
+  font-size: 14px;
   color: #555;
-  line-height: 1.5;
+}
+
+#playlistsSpotify h3 {
+  width: 100%;
+  font-size: 22px;
   margin-bottom: 10px;
-}
-.infoCarta p:last-child {
-  font-weight: bold;
-  color: #333;
+  color: #2c3e50;
 }
 
+.separador {
+  width: 100%;
+  height: 2px;
+  background-color: #ccc;
+  margin: 30px 0;
+}
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .contenedorGeneral {
-      flex-direction: column;
-      height: auto;
+    flex-direction: column;
   }
 
   .sidebar {
-      width: 100%;
-      border-right: none;
-      border-bottom: 1px solid #ddd;
-      display: flex;
-      justify-content: center;
-      padding: 10px;
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
   }
 
   .sidebar nav ul {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .sidebar nav ul li {
-      margin: 10px;
-  }
-
-  .contenidoPrincipal {
-      padding: 20px;
+    margin: 10px 15px;
   }
 
   .logo {
-      width: 130px;
+    width: 130px;
+    margin-bottom: 0;
   }
 }
 
-@media (max-width: 480px) {
-  .logo {
-      width: 100px;
+@media (max-width: 600px) {
+  .contenedorDeCartas {
+    grid-template-columns: 1fr;
+    padding: 10px 0;
   }
 
   .infoCarta h3 {
-      font-size: 1.3em;
+    font-size: 16px;
   }
 
   .infoCarta p {
-      font-size: 0.9em;
+    font-size: 13px;
   }
 
-  .contenedorDeCartas {
-      grid-template-columns: 1fr;
-      padding: 10px;
+  .logo {
+    width: 100px;
   }
 }

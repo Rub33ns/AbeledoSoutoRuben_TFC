@@ -4,37 +4,25 @@ if (!isset($_SESSION['usuario'])) {
     header('Location: login.php');
     exit();
 }
+require_once '../controladores/conectarBD.php';
 
-require_once '../controladores/conectarBD.php'; 
-$stmt = $pdo->query("
-    SELECT ejercicios.*, parteCuerpo.nombre
-    FROM ejercicios 
-    JOIN parteCuerpo ON ejercicios.idParteCuerpo = parteCuerpo.id
-    ORDER BY parteCuerpo.nombre
-");
-
-$ejercicios = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-$categorias = [];
-foreach ($ejercicios as $ejercicio) {
-    $nombreParte = $ejercicio['nombre'];
-    $categorias[$nombreParte][] = $ejercicio;
-}
+$stmt = $pdo->query("SELECT * FROM parteCuerpo ORDER BY nombre");
+$partesCuerpo = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicios</title>
     <link rel="stylesheet" href="../estilos/listados.css">
+    <script src="../scripts/playlist.js" defer></script>
+    <script src="../scripts/buscarEjercicios.js" defer></script> 
     <link rel="shortcut icon" href="../img/IconoPlayFit.png" type="image/x-icon">
 </head>
 <body>
     <div class="contenedorGeneral">
-        <!-- Nav lateral -->
         <aside class="sidebar">
-            <img src="../img/LogoPlayfit.png" alt="PlayFit Logo" class="logo">
+            <img src="../img/LogoPlayfit.png" class="logo">
             <nav>
                 <ul>
                     <li><a href="inicio.php">Inicio</a></li>
@@ -47,34 +35,26 @@ foreach ($ejercicios as $ejercicio) {
             </nav>
         </aside>
 
-        <!-- Contenido principal -->
         <main class="contenidoPrincipal">
-            <div style="text-align: right; margin: 20px;">
+            <div style="margin: 20px;">
                 <a href="crearEjercicios.php" class="boton-crear">Crear Ejercicio +</a>
             </div>
 
-            <div class="ejercicios-container">
-                <?php foreach ($categorias as $nombreCategoria => $listaEjercicios): ?>
-                    <div class="categoria">
-                        <h2><?= $nombreCategoria ?></h2>
-                        <div class="contenedorDeCartas">
-                            <?php foreach ($listaEjercicios as $ejercicio): ?>
-                                <div class="carta">
-                                    <img src="<?= $ejercicio['imagenEjercicio'] ?>" alt="<?= $ejercicio['nombreEjercicio']?>">
-                                    <div class="infoCarta">
-                                        <h3><?= $ejercicio['nombreEjercicio']?></h3>
-                                        <p><?= $ejercicio['descripcion'] ?></p>
-                                        <p>Repeticiones: <?=$ejercicio['repeticones'] ?></p>
-                                        <p>Tiempo por repetición: <?= $ejercicio['tiempoRepeticones'] ?></p>
-                                    </div>
-                                </div>
-                            <?php endforeach; ?>
-                        </div>
-                    </div>
-                <?php endforeach; ?>
-            </div>
+            <form style="margin: 20px;">
+                <label for="parte">Selecciona una parte del cuerpo:</label>
+                <select id="parte" onchange="cargarEjercicios()">
+                    <option value="0">Full body</option>
+                    <?php foreach ($partesCuerpo as $parte): ?>
+                        <option value="<?= $parte['id'] ?>"><?= $parte['nombre'] ?></option>
+                    <?php endforeach; ?>
+                </select>
+            </form>
+                <h1>Playlist recomendadas:</h1>
+                <div id="playlistsSpotify" class="contenedorDeCartas"></div>
+                <div class="separador"></div>
+                <h1>Ejercicios sobre la parte seleccionada:</h1>
+                <div id="ejercicios" class="contenedorDeCartas"></div>
         </main>
     </div>
 </body>
 </html>
-modificame esto 
