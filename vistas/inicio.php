@@ -49,6 +49,23 @@ if (!isset($_SESSION['usuario'])) {
                                 alt="Ejercicio de fondos en paralelas">
                         <img src="../img/flexionesInclinadas.png" 
                                 alt="Ejercicio de flexiones inclinadas">
+
+                                <img src="../img/curlConcentrado.png" 
+                                alt="Ejercicio de curl concentrado">
+                        <img src="../img/remoConMancuernaAUnaMano.png" 
+                                alt="Ejercicio de remo con mancuerna a una mano">
+                        <img src="../img/remoEnMaquina.png" 
+                                alt="Ejercicio de remo en máquina">
+                        <img src="../img/flexionesDeTriceps.png" 
+                                alt="Ejercicio de flexiones de triceps">
+                        <img src="../img/curlDeBiceps.png" 
+                                alt="Ejercicio de curl de biceps">
+                        <img src="../img/extensionDeTriceps.png" 
+                                alt="Ejercicio de extension de triceps">
+                        <img src="../img/dominadas.png" 
+                                alt="Ejercicio de dominadas">
+                        <img src="../img/pesoMuertoConBarra.png" 
+                                alt="Ejercicio de peso muerto conBarra">
                         </div>
                 <!-- Sección para dar la bienvenida y empezar el reto -->
                 <section class="bienvenida">
@@ -74,6 +91,23 @@ if (!isset($_SESSION['usuario'])) {
                                 alt="Ejercicio de dominadas">
                         <img src="../img/pesoMuertoConBarra.png" 
                                 alt="Ejercicio de peso muerto conBarra">
+
+                           <img src="../img/sentadillas.png" 
+                                alt="Ejercicio de sentadillas ">
+                        <img src="../img/flexiones.png" 
+                                alt="Ejercicio de  flexiones">
+                        <img src="../img/zancadas.png" 
+                                alt="Ejercicio de zancadas">
+                        <img src="../img/pressDeBanca.png" 
+                                alt="Ejercicio de press de banca">
+                        <img src="../img/pesoMuerto.png" 
+                                alt="Ejercicio de Peso Muerto">
+                        <img src="../img/aperturaConMancuernas.png" 
+                                alt="Ejercicio de apertura con mancuernas">
+                        <img src="../img/fondosEnParalelas.png" 
+                                alt="Ejercicio de fondos en paralelas">
+                        <img src="../img/flexionesInclinadas.png" 
+                                alt="Ejercicio de flexiones inclinadas">
                         </div>
                 </div>
       </div>

@@ -1,8 +1,8 @@
 <?php
 session_start();
 if (!isset($_SESSION['usuario'])) {
-    header('Location: login.php');
-    exit();
+  header('Location: login.php');
+  exit();
 }
 ?>
 <!DOCTYPE html>
@@ -22,12 +22,12 @@ if (!isset($_SESSION['usuario'])) {
       <img src="../img/LogoPlayfit.png" alt="PlayFit Logo" class="logo">
       <nav>
         <ul>
-                <li><a href="inicio.php">Inicio</a></li>
-                <li><a href="retos.php">Reto Semanal</a></li>
-                <li><a href="listadoEjercicios.php">Listado de ejercicios</a></li>
-                <li><a href="sobreNosotros.php">Sobre nosotros</a></li>
-                <li><a href="perfil.php">Perfil de Usuario</a></li>
-                <li><a href="../controladores/cerrarSesion.php">Cerrar sesión</a></li>
+          <li><a href="inicio.php">Inicio</a></li>
+          <li><a href="retos.php">Reto Semanal</a></li>
+          <li><a href="listadoEjercicios.php">Listado de ejercicios</a></li>
+          <li><a href="sobreNosotros.php">Sobre nosotros</a></li>
+          <li><a href="perfil.php">Perfil de Usuario</a></li>
+          <li><a href="../controladores/cerrarSesion.php">Cerrar sesión</a></li>
         </ul>
       </nav>
     </aside>
@@ -35,7 +35,7 @@ if (!isset($_SESSION['usuario'])) {
     <!-- Página principal, donde explico basicamente de una manera rusumida que es PlayFit-->
     <main class="contenidoPrincipal">
       <section class="bienvenida">
-        <h1>Sobre  <span style="color: red;">PlayFit</span></h1>
+        <h1>Sobre <span style="color: red;">PlayFit</span></h1>
       </section>
 
       <div class="sobreNosotrosDatos">
@@ -47,23 +47,95 @@ if (!isset($_SESSION['usuario'])) {
           de el cuerpo que quieres entrenar.</p>
         <br>
         <h3>¿Cual es la idea de PlayFit?</h3>
-        <p>La idea de PlayFit es crear una página web junto apis nos ayude a realizar más deporte con retos diarios. </p>
+        <p>La idea de PlayFit es crear una página web junto apis nos ayude a realizar más deporte con retos diarios.
+        </p>
+        <br>
+        <h3>¿Para quien esta dirigido Playfit?</h3>
+        <p>PLayFit no esta enfocado a un público en concreto, esta pensado principalmente para ayudar a empresas como
+          centros de rehabilitacion y gimnasios pero podria utilizarl la web todo el mundo.</p>
         <br>
         <h3>¿Cual es el orígen de PlayFit?</h3>
-        <p>PLayFit viene de una idea para realizar un TFC creada por el desarrollador y creador de el proyecto Rubén Abeledo Souto. </p>
+        <p>PLayFit viene de una idea para realizar un TFC creada por el desarrollador y creador de el proyecto Rubén
+          Abeledo Souto. </p>
       </div>
 
       <div class="sobreNosotrosDatos">
         <h2>Tecnologías Utilizadas</h2>
         <br>
-        <h3>Api Externa</h3>
-          <ul>
-            <li><strong>Nombre:</strong>  ExerciseDB API</li>
-            <li><strong> Informacion de la api:</strong> <a href="https://github.com/cyberboyanmol/exercisedb-api">ExerciseDB GitHub</a></li>
-            <li><strong>Acceso a través de:</strong> <a href="https://rapidapi.com/hub">RapidApi</a></li>
-            <li><strong>Tipo de licencia:</strong> MIT  Copyright (c) 2024 Anmol Gangwar</li>
-            <li> <strong>Utilidaz de esta Api:</strong> Principalmente la uso para generar ejercicios aleatorios con su nombre, descripción, imagen/gif.</li>
-          </ul>
+        <h3>APIs Utilizadas</h3>
+        <ul>
+          <li><strong>Nombre:</strong> ExerciseDB API</li>
+          <li><strong> Informacion de la api:</strong> <a
+              href="https://github.com/cyberboyanmol/exercisedb-api">ExerciseDB GitHub</a></li>
+          <li><strong>Acceso a través de:</strong> <a href="https://rapidapi.com/hub">RapidApi</a></li>
+          <li><strong>Tipo de licencia:</strong> MIT Copyright (c) 2024 Anmol Gangwar</li>
+          <li> <strong>Utilidaz de esta Api:</strong> Principalmente la uso para generar ejercicios aleatorios con su
+            nombre, descripción, imagen/gif.</li>
+        </ul>
+        <br>
+        <hr>
+        <br>
+        <ul>
+          <li><strong>Nombre:</strong> Spotify Web API</li>
+          <li><strong> Informacion de la api:</strong> <a
+              href="https://developer.spotify.com/documentation/web-api/">Spotify Web API Docs</a></li>
+          <li><strong>Acceso a través de:</strong> <a href="https://developer.spotify.com/dashboard/">Spotify Developer
+              Dashboard</a></li>
+          <li><strong>Tipo de licencia:</strong> Propietaria, bajo los términos de uso de Spotify</li>
+          <li> <strong>Utilidaz de esta Api:</strong> Esta api la utilizo para generar playlist dependiendo de el tipo
+            de ejercicio que selecciones.</li>
+        </ul>
+        <br>
+        <hr>
+        <br>
+        <h3>Imágenes Playfit</h3>
+        <ul>
+          <li>Todas las imágenes utilizadas en este proyecto han sido generadas mediante inteligencia artificial.</li>
+          <li>De acuerdo con los Términos de uso de OpenAI, tengo pleno derecho a utilizarlas, modificarlas y
+            distribuirlas libremente, incluso con fines comerciales.</li>
+          <li><strong>Licencia de uso:</strong> OpenAI.</li>
+        </ul>
+        <br>
+        <hr>
+        <br>
+        <h3>Herramientas de desarrollo</h3>
+        <ul>
+          <li>Visual Estudio Code</li>
+        </ul>
+        <br>
+        <hr>
+        <br>
+        <h3>Base de Datos</h3>
+        <ul>
+          <li>phpMyadmin</li>
+        </ul>
+        <br>
+        <hr>
+        <br>
+        <h3>Control de Versiones</h3>
+        <ul>
+          <li><strong>GitHub:</strong> Utilizo este control de versiones para guardar la estructura y contenido de el
+            proyecto</li>
+        </ul>
+        <br>
+        <hr>
+        <br>
+        <h3>Despliegue de el proyecto</h3>
+        <ul>
+          <li><strong>Docker:</strong>Utilizo docker para desplegar mi proyecto con un Docker-compose.yml y un DockerFile</li>
+        </ul>
+        <br>
+        <hr>
+        <br>
+        <h3>Lenguajes Utilizados</h3>
+        <ul>
+          <li><strong>Html:</strong>Utilizado para las vistas.</li>
+          <li><strong>Php:</strong>Utilizado para las vistas y controladores.</li>
+          <li><strong>JavaScript:</strong>Utilizado para trabajar con los formularios y las apis.</li>
+          <li><strong>Css:</strong>Utilizado para las vistas.</li>
+        </ul>
+
+
       </div>
       <div class="sobreNosotrosDatos">
         <h2>Equipo De Trabajo</h2>
@@ -77,7 +149,7 @@ if (!isset($_SESSION['usuario'])) {
           </div>
         </div>
       </div>
-      
+
     </main>
   </div>
 
