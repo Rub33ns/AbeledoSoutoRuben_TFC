@@ -65,7 +65,7 @@ input[type="password"] {
 input[type="email"]:hover,
 input[type="password"]:hover {
   border-color: #8b0000;
-  outline: none;
+  
 }
 
 button {
