@@ -15,7 +15,7 @@ session_start();
 <body>
   <div class="cajaGeneral">
     <div class="cajaFormulario">
-      <img src="../img/LogoPlayfit.png" alt="PlayFit" class="logo">
+      <img src="../img/LogoPlayfitForm.png" alt="PlayFit" class="logo">
       <h2>Crear tu cuenta</h2>
 
       <!-- En caso de que dé error al enviar el formulario, mostrar el error en rojo dentro del formulario-->

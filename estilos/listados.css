@@ -26,7 +26,7 @@ body {
 /* Sidebar */
 .sidebar {
   width: 220px;
-  background-color: #ffffff;
+  background-color: #1A237E;
   border-right: 1px solid #ddd;
   padding: 20px;
 }
@@ -38,7 +38,7 @@ body {
 }
 .sidebar nav ul li a {
   text-decoration: none;
-  color: #333;
+  color: white;
   font-weight: bold;
 }
 
@@ -55,7 +55,7 @@ body {
 /* Botón */
 .boton-crear {
   display: inline-block;
-  background-color: red;
+  background-color: #1A237E;
   color: white;
   padding: 10px 15px;
   text-decoration: none;
