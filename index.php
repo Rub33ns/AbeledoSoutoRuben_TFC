@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 <body>
 <div class="contenedor">
-    <img src="img/LogoPlayfit.png" alt="PlayFit" class="logo">
+    <img src="img/LogoPlayfitForm.png" alt="PlayFit" class="logo">
     <form method="post">
         <button type="submit" name="crearBD">Crear Base de Datos</button>
     </form>
