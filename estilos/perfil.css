@@ -3,41 +3,49 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  /* Estilo para la letra de el documento */
-  body {
+}
+
+/* Estilo para la letra de el documento */
+body {
     font-family: 'Arial', sans-serif;
     background-color: #F8F9FA;
-  }
-  /* Contenedor principal */
-  .contenedorGeneral {
+}
+
+/* Contenedor principal */
+.contenedorGeneral {
     display: flex;
     height: 100vh;
-  }
-  /* Estilo para el logo PlayFit rojo */
-  .logo {
+}
+
+/* Estilo para el logo PlayFit rojo */
+.logo {
     width: 170px;
     margin-bottom: 30px;
-  }
-  /* Estilos para el nav (parte izq ) */
-  .sidebar {
+}
+
+/* Estilos para el nav (parte izq ) */
+.sidebar {
     width: 220px;
     background-color: #ffffff;
     border-right: 1px solid #ddd;
     padding: 20px;
-  }
-  .sidebar nav ul {
-    list-style:none;
-  }
-  .sidebar nav ul li {
+}
+
+.sidebar nav ul {
+    list-style: none;
+}
+
+.sidebar nav ul li {
     margin: 30px 0;
-  }
-  .sidebar nav ul li a {
+}
+
+.sidebar nav ul li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-  }
-/* Contenido principal */
+}
+
+
 .contenidoPrincipal {
     flex: 1;
     padding: 40px;
@@ -51,7 +59,6 @@
     text-align: center;
 }
 
-/* Perfil contenedor */
 .perfil-contenedor {
     display: flex;
     align-items: center;
@@ -73,7 +80,6 @@
     margin-right: 30px;
 }
 
-/* Datos de usuario */
 .datos-usuario {
     display: flex;
     flex-direction: column;
@@ -85,7 +91,31 @@
     color: #555;
 }
 
-/* Responsive para móviles */
+.acciones-perfil {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.acciones-perfil button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    min-width: 180px;
+}
+
+.acciones-perfil button:hover {
+    background-color: #c70000;
+}
+
+
 @media (max-width: 600px) {
     .perfil-contenedor {
         flex-direction: column;
@@ -97,4 +127,14 @@
         margin-right: 0;
         margin-bottom: 20px;
     }
+
+    .acciones-perfil {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .acciones-perfil button {
+        width: 80%;
+    }
+    
 }

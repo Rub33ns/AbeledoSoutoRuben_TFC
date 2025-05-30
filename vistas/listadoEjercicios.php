@@ -36,8 +36,8 @@ $partesCuerpo = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </aside>
 
         <main class="contenidoPrincipal">
-            <div style="margin: 20px;">
-                <a href="crearEjercicios.php" class="boton-crear">Crear Ejercicio +</a>
+            <div class="contenedorCrearEjericios">
+                 <a href="crearEjercicios.php" class="boton-crear">Crear Nuevo Ejercicio</a>
             </div>
 
             <form style="margin: 20px;">

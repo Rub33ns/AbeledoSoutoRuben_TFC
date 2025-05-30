@@ -48,7 +48,10 @@ body {
   padding: 20px;
   background-color: #ffffff;
 }
-
+.contenedorCrearEjericios {
+  text-align: right;
+  margin-bottom: 20px;
+}
 /* Botón */
 .boton-crear {
   display: inline-block;
@@ -167,3 +170,4 @@ body {
     width: 100px;
   }
 }
+
