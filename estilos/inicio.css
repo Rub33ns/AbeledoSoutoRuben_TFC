@@ -8,7 +8,7 @@
 /* Estilo para la letra del documento */
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #F8F9FA;
+  background-color: #faf8f8;
 }
 
 /* Contenedor principal */
@@ -26,7 +26,7 @@ body {
 /* Estilos para el nav (parte izquierda) */
 .sidebar {
   width: 220px;
-  background-color: #ffffff;
+  background-color:#1A237E;
   border-right: 1px solid #ddd;
   padding: 20px;
 }
@@ -38,18 +38,17 @@ body {
 }
 .sidebar nav ul li a {
   text-decoration: none;
-  color: #333;
+  color: white;
   font-weight: bold;
 }
 
-/* Estilo para el Div donde va todo el contenido que no es un sidebar */
 .contenidoPrincipal {
   flex: 1;
   padding: 40px;
-  overflow-y: auto; /* Cambié a auto para scroll en móvil */
+  overflow-y: auto; 
 }
 
-/* Texto de bienvenida */
+
 .bienvenida {
   background-color: white;
   padding: 40px;
@@ -59,15 +58,15 @@ body {
 }
 
 .bienvenida h1 {
-  font-size: 40px; /* 2.5rem → 40px */
+  font-size: 40px;
   color: black;
   margin-bottom: 10px;
 }
 
-/* Botón para enlazar con el reto semanal */
+
 .Empezar_Reto {
   padding: 12px 25px;
-  background-color: red;
+  background-color: #1A237E;
   color: white;
   text-decoration: none;
   font-weight: bold;
@@ -78,7 +77,7 @@ body {
   background-color: #e74155;
 }
 
-/* Estilos para el carrusel de fotos  */
+
 .carrusel {
   width: 100%;  
   margin: 30px auto;
@@ -108,7 +107,6 @@ body {
   }
 }
 
-/* pie de página */
 .footer {
   text-align: center;
   padding: 15px;
