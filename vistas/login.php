@@ -18,7 +18,7 @@ if (isset($_GET['error'])) {
 <body>
   <div class="cajaLogin">
     <div class="cajaContenido">
-      <img src="../img/LogoPlayfit.png" alt="Logo de PlayFit" class="logo">
+      <img src="../img/LogoPlayfitForm.png" alt="Logo de PlayFit" class="logo">
       <h2>Bienvenido a PlayFit</h2>
       <form action="../controladores/loguear.php" method="POST">
         <label for="correo">Correo:</label>

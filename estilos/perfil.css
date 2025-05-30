@@ -26,7 +26,7 @@ body {
 /* Estilos para el nav (parte izq ) */
 .sidebar {
     width: 220px;
-    background-color: #ffffff;
+    background-color: #1A237E;
     border-right: 1px solid #ddd;
     padding: 20px;
 }
@@ -41,7 +41,7 @@ body {
 
 .sidebar nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: white;
     font-weight: bold;
 }
 
@@ -76,7 +76,7 @@ body {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid red;
+    border: 4px solid #1A237E;
     margin-right: 30px;
 }
 
@@ -100,7 +100,7 @@ body {
 }
 
 .acciones-perfil button {
-    background-color: red;
+    background-color: #1A237E;
     color: white;
     border: none;
     padding: 12px 20px;
@@ -112,7 +112,7 @@ body {
 }
 
 .acciones-perfil button:hover {
-    background-color: #c70000;
+    background-color: #5153f7;
 }
 
 

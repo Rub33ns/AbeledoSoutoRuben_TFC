@@ -69,7 +69,7 @@ if (!isset($_SESSION['usuario'])) {
                         </div>
                 <!-- Sección para dar la bienvenida y empezar el reto -->
                 <section class="bienvenida">
-                <h1>Bienvenido a <span style="color: red;">PlayFit</span></h1>
+                <h1>Bienvenido a <span style="color:#1A237E;">PlayFit</span></h1>
                 <p>Juega y entrena realizando ejercicio</p>
                 <br>
                 <a href="retos.php" class="Empezar_Reto">Empieza tu reto</a>
@@ -110,11 +110,13 @@ if (!isset($_SESSION['usuario'])) {
                                 alt="Ejercicio de flexiones inclinadas">
                         </div>
                 </div>
+                 
       </div>
-    </main>
-    <footer class="footer">
+     <footer class="footer">
     <p>&copy; Ruben Abeledo Souto</p>
   </footer>
+    </main>
+    
   </div>
 </body>
 </html>

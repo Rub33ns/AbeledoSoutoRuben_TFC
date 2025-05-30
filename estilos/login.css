@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background: linear-gradient(150deg, red, white);
+  background: linear-gradient(150deg, #1A237E, white);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,7 +37,7 @@ body {
 }
 
 h2 {
-  color: #8b0000;
+  color: #1A237E;
   margin-bottom: 30px;
 }
 
@@ -64,13 +64,13 @@ input[type="password"] {
 
 input[type="email"]:hover,
 input[type="password"]:hover {
-  border-color: #8b0000;
+  border-color: #1A237E;
   
 }
 
 button {
   padding: 12px;
-  background-color: #8b0000;
+  background-color:#1A237E;
   color: white;
   border: none;
   border-radius: 8px;
@@ -81,7 +81,7 @@ button {
 }
 
 button:hover {
-  background-color: #5a0000;
+  background-color:#5153f7;
 }
 
 p {
@@ -91,7 +91,7 @@ p {
 }
 
 p a {
-  color: #8b0000;
+  color: #1A237E;
   font-weight: bold;
   text-decoration: none;
 }

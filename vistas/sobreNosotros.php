@@ -21,7 +21,7 @@ if (!isset($_SESSION['usuario'])) {
     <aside class="sidebar">
       <img src="../img/LogoPlayfit.png" alt="PlayFit Logo" class="logo">
       <nav>
-        <ul>
+       <ul>
           <li><a href="inicio.php">Inicio</a></li>
           <li><a href="retos.php">Reto Semanal</a></li>
           <li><a href="listadoEjercicios.php">Listado de ejercicios</a></li>
@@ -35,27 +35,27 @@ if (!isset($_SESSION['usuario'])) {
     <!-- Página principal, donde explico basicamente de una manera rusumida que es PlayFit-->
     <main class="contenidoPrincipal">
       <section class="bienvenida">
-        <h1>Sobre <span style="color: red;">PlayFit</span></h1>
+        <h1>Sobre <span style="color: #1A237E;">PlayFit</span></h1>
       </section>
 
       <div class="sobreNosotrosDatos">
-        <h2>Preguntas Frecuentes</h2>
+        <h2>Preguntas Frecuentes sobre PlayFit</h2>
         <br>
-        <h3>¿Que es PlayFit?</h3>
-        <p>PlayFit es una aplicaión web que te ayuda a cambiar tus habitos a la hora de hacer deporte.</p>
-        <p>Para eso nuestra web te ofrede una serie de retos diarios de ejercicios par cumplir dependiendo de la parte
-          de el cuerpo que quieres entrenar.</p>
+        <h3>¿Qué es?</h3>
+        <p>PlayFit es una aplicación web que ayuda a cambiar tus hábitos a la hora de hacer deporte.</p>
+        <p>Para eso, nuestra web te ofrece una serie de ejercicios diarios para cumplir dependiendo de la parte
+          del cuerpo que quieras entrenar.</p>
         <br>
-        <h3>¿Cual es la idea de PlayFit?</h3>
-        <p>La idea de PlayFit es crear una página web junto apis nos ayude a realizar más deporte con retos diarios.
+        <h3>¿Cuál es la idea?</h3>
+        <p>La idea de PlayFit es crear una página web junto a la ayuda de APIs, que fomente la realización de ejercicio físico mediante retos diarios.
         </p>
         <br>
-        <h3>¿Para quien esta dirigido Playfit?</h3>
-        <p>PLayFit no esta enfocado a un público en concreto, esta pensado principalmente para ayudar a empresas como
-          centros de rehabilitacion y gimnasios pero podria utilizarl la web todo el mundo.</p>
+        <h3>¿Hacia quién va dirigido?</h3>
+        <p>PlayFit no está enfocado a un público concreto, en un inicio estaba pensado principalmente para ayudar a empresas como
+          centros de rehabilitacion y gimnasios, pero podría utilizar la web todo el que quisiera.</p>
         <br>
-        <h3>¿Cual es el orígen de PlayFit?</h3>
-        <p>PLayFit viene de una idea para realizar un TFC creada por el desarrollador y creador de el proyecto Rubén
+        <h3>¿Cuál es el orígen?</h3>
+        <p>PlayFit viene de una idea para realizar un TFC creada por el desarrollador y creador del proyecto Rubén
           Abeledo Souto. </p>
       </div>
 
@@ -63,77 +63,77 @@ if (!isset($_SESSION['usuario'])) {
         <h2>Tecnologías Utilizadas</h2>
         <br>
         <h3>APIs Utilizadas</h3>
-        <ul>
-          <li><strong>Nombre:</strong> ExerciseDB API</li>
-          <li><strong> Informacion de la api:</strong> <a
-              href="https://github.com/cyberboyanmol/exercisedb-api">ExerciseDB GitHub</a></li>
-          <li><strong>Acceso a través de:</strong> <a href="https://rapidapi.com/hub">RapidApi</a></li>
-          <li><strong>Tipo de licencia:</strong> MIT Copyright (c) 2024 Anmol Gangwar</li>
-          <li> <strong>Utilidaz de esta Api:</strong> Principalmente la uso para generar ejercicios aleatorios con su
-            nombre, descripción, imagen/gif.</li>
-        </ul>
+       
+          <p><strong>Nombre:</strong> ExerciseDB API</p>
+          <p><strong> Informacion de la api:</strong> <a
+              href="https://github.com/cyberboyanmol/exercisedb-api">ExerciseDB GitHub</a></p>
+          <p><strong>Acceso a través de:</strong> <a href="https://rapidapi.com/hub">RapidApi</a></p>
+          <p><strong>Tipo de licencia:</strong> MIT Copyright (c) 2024 Anmol Gangwar</p>
+          <p> <strong>Utilidaz de esta Api:</strong> Principalmente la uso para generar ejercicios aleatorios con su
+            nombre, descripción, imagen/gif.</p>
+        
         <br>
         <hr>
         <br>
-        <ul>
-          <li><strong>Nombre:</strong> Spotify Web API</li>
-          <li><strong> Informacion de la api:</strong> <a
-              href="https://developer.spotify.com/documentation/web-api/">Spotify Web API Docs</a></li>
-          <li><strong>Acceso a través de:</strong> <a href="https://developer.spotify.com/dashboard/">Spotify Developer
-              Dashboard</a></li>
-          <li><strong>Tipo de licencia:</strong> Propietaria, bajo los términos de uso de Spotify</li>
-          <li> <strong>Utilidaz de esta Api:</strong> Esta api la utilizo para generar playlist dependiendo de el tipo
-            de ejercicio que selecciones.</li>
-        </ul>
+       
+          <p><strong>Nombre:</strong> Spotify Web API</p>
+          <p><strong> Informacion de la api:</strong> <a
+              href="https://developer.spotify.com/documentation/web-api/">Spotify Web API Docs</a></p>
+          <p><strong>Acceso a través de:</strong> <a href="https://developer.spotify.com/dashboard/">Spotify Developer
+              Dashboard</a></p>
+          <p><strong>Tipo de licencia:</strong> Propietaria, bajo los términos de uso de Spotify</p>
+          <p> <strong>Utilidaz de esta Api:</strong> Esta api la utilizo para generar playlist dependiendo de el tipo
+            de ejercicio que selecciones.</p>
+        
         <br>
         <hr>
         <br>
         <h3>Imágenes Playfit</h3>
-        <ul>
-          <li>Todas las imágenes utilizadas en este proyecto han sido generadas mediante inteligencia artificial.</li>
-          <li>De acuerdo con los Términos de uso de OpenAI, tengo pleno derecho a utilizarlas, modificarlas y
-            distribuirlas libremente, incluso con fines comerciales.</li>
-          <li><strong>Licencia de uso:</strong> OpenAI.</li>
-        </ul>
+       
+          <p>Todas las imágenes utilizadas en este proyecto han sido generadas mediante inteligencia artificial.</p>
+          <p>De acuerdo con los Términos de uso de OpenAI, tengo pleno derecho a utilizarlas, modificarlas y
+            distribuirlas libremente, incluso con fines comerciales.</p>
+          <p><strong>Licencia de uso:</strong> OpenAI.</p>
+        
         <br>
         <hr>
         <br>
         <h3>Herramientas de desarrollo</h3>
-        <ul>
-          <li>Visual Estudio Code</li>
-        </ul>
+       
+          <p>Visual Estudio Code</p>
+        
         <br>
         <hr>
         <br>
         <h3>Base de Datos</h3>
-        <ul>
-          <li>phpMyadmin</li>
-        </ul>
+       
+          <p>phpMyadmin</p>
+        
         <br>
         <hr>
         <br>
         <h3>Control de Versiones</h3>
-        <ul>
-          <li><strong>GitHub:</strong> Utilizo este control de versiones para guardar la estructura y contenido de el
-            proyecto</li>
-        </ul>
+       
+          <p><strong>GitHub:</strong> Utilizo este control de versiones para guardar la estructura y contenido de el
+            proyecto</p>
+        
         <br>
         <hr>
         <br>
         <h3>Despliegue de el proyecto</h3>
-        <ul>
-          <li><strong>Docker:</strong>Utilizo docker para desplegar mi proyecto con un Docker-compose.yml y un DockerFile</li>
-        </ul>
+       
+          <p><strong>Docker:</strong>Utilizo docker para desplegar mi proyecto con un Docker-compose.yml y un DockerFile</p>
+        
         <br>
         <hr>
         <br>
         <h3>Lenguajes Utilizados</h3>
-        <ul>
-          <li><strong>Html:</strong>Utilizado para las vistas.</li>
-          <li><strong>Php:</strong>Utilizado para las vistas y controladores.</li>
-          <li><strong>JavaScript:</strong>Utilizado para trabajar con los formularios y las apis.</li>
-          <li><strong>Css:</strong>Utilizado para las vistas.</li>
-        </ul>
+       
+          <p><strong>Html:</strong>Utilizado para las vistas.</p>
+          <p><strong>Php:</strong>Utilizado para las vistas y controladores.</p>
+          <p><strong>JavaScript:</strong>Utilizado para trabajar con los formarios y las apis.</p>
+          <p><strong>Css:</strong>Utilizado para las vistas.</p>
+        
 
 
       </div>
