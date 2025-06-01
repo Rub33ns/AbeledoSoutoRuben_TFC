@@ -18,8 +18,8 @@ async function conseguirToken(clientId, clientSecret) {
 async function buscarPlaylist(query, token) {
     //Guardo una variable el filtro que utilizo en caso de que no encuentre playlist para esa parte
     const queryDeportivo = `${query} gym`;
-    //Hago la peticion a la api para que me coincida con la palabra de filtro y la que se selecciona y le pongo una limitación de 70 busquedas
-    const response = await fetch(`https://api.spotify.com/v1/search?q=${encodeURIComponent(queryDeportivo)}&type=playlist&limit=70`, {
+    //Hago la peticion a la api para que me coincida con la palabra de filtro y la que se selecciona y le pongo una limitación de 50 busquedas
+    const response = await fetch(`https://api.spotify.com/v1/search?q=${encodeURIComponent(queryDeportivo)}&type=playlist&limit=50`, {
         headers: {
             'Authorization': `Bearer ${token}`
         }
