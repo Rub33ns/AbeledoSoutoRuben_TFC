@@ -27,10 +27,10 @@ Este proyecto cuenta con las siguientes tecnologías:
     -JS: Validaciones de formularios y trabajo con las apis.
 
     -Docker: Despliegamiento de el proyecto
-    
+
     -GitHub: Control de versiones
     
-                                                                        — DESPLEGAMIENTO DEL PROYECTO —
+                                                                    — DESPLEGAMIENTO DEL PROYECTO —
                                                                     
 1->Bajar el contenido de el repositorio ( Ya contiene los archivos de docker para ejecutarlo seguir los pasos.)
 
