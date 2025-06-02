@@ -32,7 +32,7 @@ if (!isset($_SESSION['usuario'])) {
     </aside>
 
     <!-- Contenido principal -->
-    <main class="contenido-principal">
+    <main class="contenidoPrincipal">
         
       <h1>Rutina Semanal</h1>
       <div class="selector">

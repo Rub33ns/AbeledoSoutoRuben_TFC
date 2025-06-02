@@ -36,16 +36,16 @@ require '../controladores/obtenerDatosUsuarios.php';
     <main class="contenidoPrincipal">
         <h2>Perfil de Usuario</h2>
 
-        <div class="perfil-contenedor">
+        <div class="perfilContenedor">
             <img src="<?php echo htmlspecialchars($user['imagenPerfil']); ?>" alt="Foto de perfil">
-            <div class="datos-usuario">
+            <div class="datosUsuario">
                 <p><strong>Nombre:</strong> <?php echo htmlspecialchars($user['nombre']); ?></p>
                 <p><strong>Apellido:</strong> <?php echo htmlspecialchars($user['apellido']); ?></p>
                 <p><strong>Correo:</strong> <?php echo htmlspecialchars($user['correo']); ?></p>
             </div>
         </div>
 
-        <div class="acciones-perfil">
+        <div class="accionesPerfil">
             <form action="formularioModificarUsuario.php" method="GET">
                 <button type="submit">Modificar mis datos</button>
             </form>

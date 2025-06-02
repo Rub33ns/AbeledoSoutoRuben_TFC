@@ -1,3 +1,4 @@
+/* Estilos para la página entera */
 * {
     margin: 0;
     padding: 0;
@@ -8,17 +9,18 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #F8F9FA;
 }
-
+/* Estilos para el contenido de la página */
 .contenedorGeneral {
     display: flex;
     height: 100vh;
 }
-
+/* Estilo para el logo de PlayFit */
 .logo {
     width: 170px;
     margin-bottom: 30px;
 }
 
+/* Estilos para el sidebar, nav en la parte izq */
 .sidebar {
     width: 220px;
     background-color: #1A237E;
@@ -40,6 +42,7 @@ body {
     font-weight: bold;
 }
 
+/* Estilo para el Contenido de la página */
 .contenidoPrincipal {
     flex: 1;
     display: flex;
@@ -47,7 +50,7 @@ body {
     align-items: center;
     padding: 40px;
 }
-
+/* Estilo para el formulário */
 .formularioModificar {
     background-color: #ffffff;
     padding: 30px 40px;

@@ -1,3 +1,4 @@
+/* Estilos para la página entera */
 * {
   margin: 0;
   padding: 0;
@@ -8,17 +9,17 @@ body {
   font-family: 'Arial', sans-serif;
   background-color: #F8F9FA;
 }
-
+/* Estilos para el contenido de la página */
 .container {
   display: flex;
   height: 100vh;
 }
-
+/* Estilo para el logo PlayFit */
 .logo {
   width: 170px;
   margin-bottom: 30px;
 }
-
+/* Estilos para el sidebar, nav en la parte izq */
 .sidebar {
   width: 220px;
   background-color: #1A237E;
@@ -37,17 +38,18 @@ body {
   font-weight: bold;
 }
 
-.contenido-principal {
+/* Estilo para el Contenido de la página */
+.contenidoPrincipal {
   flex: 1;
   padding: 40px;
   overflow-y: auto;
 }
 
-.contenido-principal h1 {
+.contenidoPrincipal h1 {
   margin-bottom: 20px;
   color: #1D1D1D;
 }
-
+/* Estilos para cada dia de la semana (Contenedores donde meter la información) */
 .ejercicios {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -55,7 +57,7 @@ body {
 }
 
 .dia {
-  background-color: #fff;
+  background-color: white;
   border-radius: 12px;
   perspective: 1000px;
   display: flex;
@@ -79,7 +81,8 @@ body {
 .dia.girar .contenidoCarta {
   transform: rotateY(180deg);
 }
-
+/* Estilos para cada parte en caso de que este la delantera no mostrar la trasera
+y asi con la trasera tambien. */
 .parteDelantera,
 .parteTrasera {
   backface-visibility: hidden;
@@ -97,7 +100,7 @@ body {
 }
 
 .parteDelantera {
-  background-color: #fff;
+  background-color: white;
   z-index: 2;
   position: relative; 
 }
@@ -119,7 +122,6 @@ body {
   border-radius: 6px;
   cursor: pointer;
   font-weight: bold;
-  transition: background 0.3s ease;
   align-self: flex-start;
 }
 
@@ -128,13 +130,13 @@ body {
 }
 
 .parteTrasera {
-  background-color: #ffffff;
+  background-color: white;
   transform: rotateY(180deg);
-  border: 2px dashed #1A237E;
+  border: 2px solid #1A237E;
   z-index: 1;
   overflow-y: auto;
 }
-
+/* Contenedor donde va ir la descripción de el ejercicio */
 .descripcion {
    margin-top: 15px;
   padding: 10px 15px;
@@ -144,7 +146,6 @@ body {
   border-radius: 6px;
   cursor: pointer;
   font-weight: bold;
-  transition: background 0.3s ease;
   align-self: flex-start;
 }
 
@@ -157,7 +158,6 @@ body {
   border-radius: 6px;
   cursor: pointer;
   font-weight: bold;
-  transition: background 0.3s ease;
   align-self: flex-start;
 }
 
@@ -176,62 +176,49 @@ body {
   width: 100%;
 }
 
-.guardar-btn {
-  padding: 10px 20px;
-  background-color:  #1A237E;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background 0.3s ease;
-}
-
-.guardar-btn:hover {
-  background-color: #8b0000;
-}
-
-.seleccionarCategoria {
+.selector {
   margin-bottom: 20px;
 }
 
-.seleccionarCategoria select,
-.seleccionarCategoria button {
+.selector select,
+.selector button {
   padding: 8px 12px;
   margin-left: 10px;
   border-radius: 5px;
-  border: 1px solid #ccc;
-  font-size: 14px;
+  border: 1px solid grey;
+  font-size: 18px;
+  background-color: #1A237E;
+  color: white;
 }
-
+/* Estilos para redimensionar en el teléfono o tablet */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
+    height: auto;
   }
 
   .sidebar {
     width: 100%;
     border-right: none;
     border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
     padding: 10px;
   }
 
   .sidebar nav ul {
     display: flex;
-    gap: 10px;
+    flex-wrap: wrap;
     justify-content: center;
+    padding: 0;
   }
 
   .sidebar nav ul li {
-    margin: 0;
+     margin: 10px;
   }
 
-  .sidebar nav ul li a {
-    padding: 8px 12px;
-    font-size: 14px;
-  }
 
-  .contenido-principal {
+  .contenidoPrincipal {
     padding: 20px;
   }
 }
@@ -251,8 +238,4 @@ body {
     margin-bottom: 10px;
   }
 
-  .sidebar nav ul li a {
-    font-size: 13px;
-    padding: 6px 10px;
-  }
 }

@@ -1,29 +1,24 @@
-/* Estilo para todo el documento */
+/* Estilos para la página entera */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-/* Estilo para la letra del documento */
 body {
   font-family: 'Arial', sans-serif;
   background-color: #faf8f8;
 }
-
-/* Contenedor principal */
+/* Estilos para el contenido de la página */
 .contenedorGeneral {
   display: flex;
   height: 100vh;
 }
-
-/* Estilo para el logo PlayFit rojo */
+/* Estilo para el logo PlayFit */
 .logo {
   width: 170px;
   margin-bottom: 30px;
 }
-
-/* Estilos para el nav (parte izquierda) */
+/* Estilos para el sidebar, nav en la parte izq */
 .sidebar {
   width: 220px;
   background-color:#1A237E;
@@ -41,14 +36,12 @@ body {
   color: white;
   font-weight: bold;
 }
-
+/* Estilo para el Contenido de la página */
 .contenidoPrincipal {
   flex: 1;
   padding: 40px;
   overflow-y: auto; 
 }
-
-
 .bienvenida {
   background-color: white;
   padding: 40px;
@@ -56,14 +49,11 @@ body {
   text-align: center;
   margin-bottom: 40px;
 }
-
 .bienvenida h1 {
   font-size: 40px;
   color: black;
   margin-bottom: 10px;
 }
-
-
 .Empezar_Reto {
   padding: 12px 25px;
   background-color: #1A237E;
@@ -71,13 +61,12 @@ body {
   text-decoration: none;
   font-weight: bold;
   border-radius: 8px;
-  transition: background 0.3s ease;
 }
 .Empezar_Reto:hover {
   background-color: #5153f7;
 }
 
-
+/* Estilo para crear el carrusel de el inicio */
 .carrusel {
   width: 100%;  
   margin: 30px auto;
@@ -85,16 +74,14 @@ body {
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-
 .carrusel .imagenes {
   display: flex;
   animation: moverCarrusel 30s linear infinite;  
 }
-
 .carrusel .imagenes img {
   width: 250px;
 }
-
+/* Animacion para que se mueva el carrusel a la izq y vuelva */
 @keyframes moverCarrusel {
   0% {
     transform: translateX(0);
@@ -106,7 +93,7 @@ body {
     transform: translateX(0);
   }
 }
-
+/* Estilo para el Footer de la página */
 .footer {
   text-align: center;
   padding: 15px;
@@ -118,13 +105,12 @@ body {
   width: 100%;
 }
 
-/* @media para que sea responsive tanto para tablet o movil */
+/* Estilo media para redimensionar la página para teléfonos y tablets */
 @media (max-width: 768px) {
   .contenedorGeneral {
     flex-direction: column;
     height: auto;
   }
-
   .sidebar {
     width: 100%;
     border-right: none;
@@ -133,26 +119,21 @@ body {
     justify-content: center;
     padding: 10px;
   }
-
   .sidebar nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 0;
   }
-
   .sidebar nav ul li {
     margin: 10px;
   }
-
   .contenidoPrincipal {
     padding: 20px;
   }
-
   .bienvenida h1 {
-    font-size: 32px; /* 2rem → 32px */
+    font-size: 32px;
   }
-
   .carrusel .imagenes img {
     width: 180px;
   }
@@ -162,21 +143,17 @@ body {
   .logo {
     width: 120px;
   }
-
   .bienvenida {
     padding: 20px;
   }
-
   .bienvenida h1 {
     font-size: 24px; 
   }
-
   .Empezar_Reto {
     width: 100%;
     padding: 10px;
-    font-size: 8px;
+    font-size: 16px;
   }
-
   .carrusel .imagenes img {
     width: 150px;
   }

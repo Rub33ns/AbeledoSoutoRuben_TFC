@@ -1,3 +1,4 @@
+/* Estilos para la página entera */
 * {
     margin: 0;
     padding: 0;
@@ -9,16 +10,19 @@ body {
     background-color: #F8F9FA;
 }
 
+/* Estilos para el contenido de la página */
 .contenedorGeneral {
     display: flex;
     height: 100vh;
 }
 
+/* Estilo para el logo de PlayFit */
 .logo {
     width: 170px;
     margin-bottom: 30px;
 }
 
+/* Estilos para el sidebar, nav en la parte izq */
 .sidebar {
     width: 220px;
     background-color: #1A237E;
@@ -26,7 +30,7 @@ body {
     padding: 20px;
 }
 
-.sidebar nav ul {   
+.sidebar nav ul {
     list-style: none;
 }
 
@@ -39,6 +43,8 @@ body {
     color: white;
     font-weight: bold;
 }
+
+/* Estilo para el Contenido de la página */
 .contenidoPrincipal {
     flex: 1;
     display: flex;
@@ -46,6 +52,8 @@ body {
     align-items: center;
     padding: 40px;
 }
+
+/* Estilo para el formulário */
 .formularioCrearEjercicio {
     background-color: #ffffff;
     padding: 30px 40px;
@@ -54,23 +62,24 @@ body {
     width: 100%;
     max-width: 500px;
 }
+
 .formularioCrearEjercicio h2 {
     margin-bottom: 25px;
     font-size: 24px;
     color: #333;
     text-align: center;
 }
+
 .formularioCrearEjercicio label {
     font-weight: bold;
     color: #555;
 }
 
-.formularioCrearEjercicio 
-input[type="text"],
+.formularioCrearEjercicio input[type="text"],
 input[type="descripcion"],
 input[type="number"],
 input[type="url"] {
-    
+
     width: 100%;
     padding: 10px 12px;
     margin-top: 3px;
