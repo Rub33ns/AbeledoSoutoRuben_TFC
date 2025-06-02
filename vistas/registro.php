@@ -10,7 +10,7 @@ session_start();
   <link rel="stylesheet" href="../estilos/registro.css">
   <link rel="shortcut icon" href="../img/IconoPlayFit.png" type="image/x-icon">
   <!--Con este script lo que realizo es validar los campos del registro con diferentes patrones -->
-  <script src="../scripts/validarRegistro.js"></script>
+  <script src="../scripts/validarFormularios.js"></script>
 </head>
 <body>
   <div class="cajaGeneral">
