@@ -72,7 +72,9 @@ body {
     color: #555;
 }
 
-.formularioModificar input[type="text"] {
+.formularioModificar input[type="text"],
+input[type="password"],
+input[type="email"] {
     width: 100%;
     padding: 10px 12px;
     margin-top: 6px;

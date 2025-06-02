@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
             correo.focus();
             return;
         }
+         if (password.value !== '' || confirmar.value !== '') {
         // Validar la contraseña como mínimo con : 1 mayus, 1 carácter especial y 8 caracteres.
         const patronPassword = /^(?=.*[A-Z])(?=.*[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]).{8,}$/;
         if (!patronPassword.test(password.value)) {
@@ -48,6 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
             confirmar.focus();
             return;
         }
+    }
         //Enviar el formulario.
         form.submit();
     });
