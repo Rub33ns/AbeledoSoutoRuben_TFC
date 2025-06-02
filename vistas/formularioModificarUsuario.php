@@ -8,7 +8,7 @@ require '../controladores/obtenerDatosUsuarios.php';
 
 <head>
     <meta charset="UTF-8" />
-    <title>Modificar Datos Usuario</title>
+    <title>PlayFit | Modificar Datos de Usuario</title>
     <link rel="stylesheet" href="../estilos/modificarFormulario.css" />
     <link rel="shortcut icon" href="../img/IconoPlayFit.png" type="image/x-icon">
 </head>
@@ -30,7 +30,7 @@ require '../controladores/obtenerDatosUsuarios.php';
         </aside>
         <main class="contenidoPrincipal">
             <div class="formularioModificar">
-            <h2>Modfica tus datos de usuario</h2>
+            <h2>Modifica tus datos de usuario</h2>
             <form action="../controladores/modificarUsuario.php" method="POST">
                 <label for="nombre">Nombre:</label><br>
                 <input type="text" id="nombre" name="nombre" required value="<?php echo $user['nombre']; ?>"><br><br>
@@ -39,7 +39,7 @@ require '../controladores/obtenerDatosUsuarios.php';
                 <input type="text" id="apellido" name="apellido" required
                     value="<?php echo $user['apellido']; ?>"><br><br>
 
-                <label for="imagenPerfil">URL Imagen de Perfil:</label><br>
+                <label for="imagenPerfil">URL de la Imagen de Perfil:</label><br>
                 <input type="text" id="imagenPerfil" name="imagenPerfil"
                     value="<?php echo $user['imagenPerfil']; ?>"><br><br>
 

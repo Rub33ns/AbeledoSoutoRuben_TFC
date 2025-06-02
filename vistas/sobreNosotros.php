@@ -10,7 +10,7 @@ if (!isset($_SESSION['usuario'])) {
 
 <head>
   <meta charset="UTF-8">
-  <title>PlayFit</title>
+  <title>PlayFit | Sobre nosotros</title>
   <link rel="stylesheet" href="../estilos/sobreNosotros.css">
   <link rel="shortcut icon" href="../img/IconoPlayFit.png" type="image/x-icon">
 </head>
@@ -32,7 +32,7 @@ if (!isset($_SESSION['usuario'])) {
       </nav>
     </aside>
 
-    <!-- Página principal, donde explico basicamente de una manera rusumida que es PlayFit-->
+    <!-- Página principal, donde explico basicamente de una manera resumida que es PlayFit-->
     <main class="contenidoPrincipal">
       <section class="bienvenida">
         <h1>Sobre <span style="color: #1A237E;">PlayFit</span></h1>
@@ -52,9 +52,9 @@ if (!isset($_SESSION['usuario'])) {
         <br>
         <h3>¿Hacia quién va dirigido?</h3>
         <p>PlayFit no está enfocado a un público concreto, en un inicio estaba pensado principalmente para ayudar a empresas como
-          centros de rehabilitacion y gimnasios, pero podría utilizar la web todo el que quisiera.</p>
+          centros de rehabilitación y gimnasios, pero podría utilizar la web todo el que quisiera.</p>
         <br>
-        <h3>¿Cuál es el orígen?</h3>
+        <h3>¿Cuál es el origen?</h3>
         <p>PlayFit viene de una idea para realizar un TFC creada por el desarrollador y creador del proyecto Rubén
           Abeledo Souto. </p>
       </div>
@@ -65,7 +65,7 @@ if (!isset($_SESSION['usuario'])) {
         <h3>APIs Utilizadas</h3>
        
           <p><strong>Nombre:</strong> ExerciseDB API</p>
-          <p><strong> Informacion de la api:</strong> <a
+          <p><strong> Información de la api:</strong> <a
               href="https://github.com/cyberboyanmol/exercisedb-api">ExerciseDB GitHub</a></p>
           <p><strong>Acceso a través de:</strong> <a href="https://rapidapi.com/hub">RapidApi</a></p>
           <p><strong>Tipo de licencia:</strong> MIT Copyright (c) 2024 Anmol Gangwar</p>
@@ -77,12 +77,12 @@ if (!isset($_SESSION['usuario'])) {
         <br>
        
           <p><strong>Nombre:</strong> Spotify Web API</p>
-          <p><strong> Informacion de la api:</strong> <a
+          <p><strong> Información de la api:</strong> <a
               href="https://developer.spotify.com/documentation/web-api/">Spotify Web API Docs</a></p>
           <p><strong>Acceso a través de:</strong> <a href="https://developer.spotify.com/dashboard/">Spotify Developer
               Dashboard</a></p>
           <p><strong>Tipo de licencia:</strong> Propietaria, bajo los términos de uso de Spotify</p>
-          <p> <strong>Utilidaz de esta Api:</strong> Esta api la utilizo para generar playlist dependiendo de el tipo
+          <p> <strong>Utilidad de esta Api:</strong> Esta api la utilizo para generar playlist dependiendo del tipo
             de ejercicio que selecciones.</p>
         
         <br>
@@ -100,14 +100,14 @@ if (!isset($_SESSION['usuario'])) {
         <br>
         <h3>Herramientas de desarrollo</h3>
        
-          <p>Visual Estudio Code</p>
+          <p>Visual Studio Code</p>
         
         <br>
         <hr>
         <br>
         <h3>Base de Datos</h3>
        
-          <p>phpMyadmin</p>
+          <p>phpMyAdmin</p>
         
         <br>
         <hr>
@@ -120,7 +120,7 @@ if (!isset($_SESSION['usuario'])) {
         <br>
         <hr>
         <br>
-        <h3>Despliegue de el proyecto</h3>
+        <h3>Despliegue del proyecto</h3>
        
           <p><strong>Docker:</strong>Utilizo docker para desplegar mi proyecto con un Docker-compose.yml y un DockerFile</p>
         
@@ -129,10 +129,10 @@ if (!isset($_SESSION['usuario'])) {
         <br>
         <h3>Lenguajes Utilizados</h3>
        
-          <p><strong>Html:</strong>Utilizado para las vistas.</p>
-          <p><strong>Php:</strong>Utilizado para las vistas y controladores.</p>
-          <p><strong>JavaScript:</strong>Utilizado para trabajar con los formarios y las apis.</p>
-          <p><strong>Css:</strong>Utilizado para las vistas.</p>
+          <p><strong>HTML:</strong>Utilizado para las vistas.</p>
+          <p><strong>PHP:</strong>Utilizado para las vistas y controladores.</p>
+          <p><strong>JavaScript:</strong>Utilizado para trabajar con los 	formularios y las apis.</p>
+          <p><strong>CSS:</strong>Utilizado para las vistas.</p>
         
 
 

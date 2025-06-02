@@ -12,7 +12,7 @@ require '../controladores/obtenerDatosUsuarios.php';
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Perfil de Usuario</title>
+    <title>PlayFit | Perfil de Usuario</title>
     <link rel="stylesheet" href="../estilos/perfil.css">
      <link rel="shortcut icon" href="../img/IconoPlayFit.png" type="image/x-icon">
 </head>

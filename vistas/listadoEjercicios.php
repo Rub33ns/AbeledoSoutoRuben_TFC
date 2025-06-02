@@ -13,7 +13,7 @@ $partesCuerpo = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Ejercicios</title>
+    <title>PlayFit | Listado de Ejercicios</title>
     <link rel="stylesheet" href="../estilos/listados.css">
     <script src="../scripts/playlist.js" defer></script>
     <script src="../scripts/buscarEjercicios.js" defer></script> 
@@ -36,8 +36,8 @@ $partesCuerpo = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </aside>
 
         <main class="contenidoPrincipal">
-            <div class="contenedorCrearEjericios">
-                 <a href="crearEjercicios.php" class="boton-crear">Crear Nuevo Ejercicio</a>
+            <div class="contenedorCrearEjercicios">
+                 <a href="crearEjercicios.php" class="botonCrear">Crear Nuevo Ejercicio</a>
             </div>
 
             <form style="margin: 20px;">

@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nombre = $_POST['nombreEjercicio'];
     $descripcion = $_POST['descripcion'];
     $repeticiones = $_POST['repeticones'];
-    $tiempo = $_POST['tiempoRepeticones'];
+    $tiempo = $_POST['tiempoRepeticiones'];
     $imagen = $_POST['imagenEjercicio'];
 //Crear la consulta para insertar el ejercicio nuevo con los datos.
     $stmt = $pdo->prepare("INSERT INTO ejercicios (idParteCuerpo, nombreEjercicio, descripcion, repeticones, tiempoRepeticones, imagenEjercicio) VALUES (?, ?, ?, ?, ?, ?)");
