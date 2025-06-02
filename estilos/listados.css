@@ -44,12 +44,12 @@ body {
   padding: 20px;
   background-color: #ffffff;
 }
-.contenedorCrearEjericios {
+.contenedorCrearEjercicios {
   text-align: right;
   margin-bottom: 20px;
 }
 
-.boton-crear {
+.botonCrear {
   display: inline-block;
   background-color: #1A237E;
   color: white;
@@ -101,6 +101,17 @@ body {
   margin: 4px 0;
   font-size: 14px;
   color: #555;
+}
+
+#parte{
+   padding: 8px 12px;
+  margin-left: 10px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  font-size: 18px;
+  background-color: #1A237E;
+  color: white;
+
 }
 
 #playlistsSpotify h3 {

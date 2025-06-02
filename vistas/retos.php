@@ -9,7 +9,7 @@ if (!isset($_SESSION['usuario'])) {
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>PlayFit</title>
+  <title>PlayFit | Retos semanales</title>
   <link rel="stylesheet" href="../estilos/retos.css">
   <link rel="shortcut icon" href="../img/IconoPlayFit.png" type="image/x-icon">
 

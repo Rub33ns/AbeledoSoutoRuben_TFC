@@ -14,13 +14,13 @@ $partes = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 <head>
     <meta charset="UTF-8">
-    <title>Crear Ejercicio</title>
+    <title>PlayFit | Crear Ejercicio</title>
     <link rel="stylesheet" href="../estilos/crearEjerciciosFormulario.css">
     <link rel="shortcut icon" href="../img/IconoPlayFit.png" type="image/x-icon">
 </head>
 
 <body>
-    <div class="contenedorGeneral">
+    <div class="contenedorGeneral" >
         <aside class="sidebar">
             <img src="../img/LogoPlayfit.png" alt="PlayFit Logo" class="logo">
             <nav>
@@ -36,7 +36,7 @@ $partes = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </aside>
         <main class="contenidoPrincipal">
             <div class="formularioCrearEjercicio">
-                <h2>Creación nuevo ejercicio</h2>
+                <h2>Crear nuevo ejercicio</h2>
                 <form action="../controladores/guardarNuevoEjercicio.php" method="POST">
                     <label>Nombre del Ejercicio:</label><br>
                     <input type="text" name="nombreEjercicio" required><br><br>
@@ -48,7 +48,7 @@ $partes = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <input type="number" name="repeticones" required><br><br>
 
                     <label>Tiempo por Repetición:</label><br>
-                    <input type="number" name="tiempoRepeticones" required><br><br>
+                    <input type="number" name="tiempoRepeticiones" required><br><br>
 
                     <label>URL de Imagen:</label><br>
                     <input type="url" name="imagenEjercicio" required><br><br>

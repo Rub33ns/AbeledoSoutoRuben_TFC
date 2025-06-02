@@ -39,6 +39,10 @@ body {
   margin-bottom: 20px;
 }
 /* Estilos para el contenido de el formulario */
+
+.mensajeError{
+  color: red;
+}
 h2 {
   color: #1A237E;
   margin-bottom: 30px;

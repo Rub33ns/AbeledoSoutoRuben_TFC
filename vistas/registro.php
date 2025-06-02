@@ -6,7 +6,7 @@ session_start();
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>PlayFit Registro</title>
+  <title>PlayFit | Registro</title>
   <link rel="stylesheet" href="../estilos/registro.css">
   <link rel="shortcut icon" href="../img/IconoPlayFit.png" type="image/x-icon">
   <!--Con este script lo que realizo es validar los campos del registro con diferentes patrones -->
@@ -20,7 +20,7 @@ session_start();
 
       <!-- En caso de que dé error al enviar el formulario, mostrar el error en rojo dentro del formulario-->
       <?php if (isset($_SESSION['error'])): ?>
-        <p style="color: red;"><?php echo $_SESSION['error']; ?></p>
+        <p class="mensajeError"><?php echo $_SESSION['error']; ?></p>
         <?php unset($_SESSION['error']); ?>
       <?php endif; ?>
 

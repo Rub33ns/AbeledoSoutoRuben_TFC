@@ -10,7 +10,7 @@ if (isset($_GET['error'])) {
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>PlayFit Login</title>
+  <title>PlayFit | Login</title>
   <link rel="stylesheet" href="../estilos/login.css">
   <link rel="shortcut icon" href="../img/IconoPlayFit.png" type="image/x-icon">
 </head>

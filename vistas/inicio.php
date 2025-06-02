@@ -65,7 +65,7 @@ if (!isset($_SESSION['usuario'])) {
                         <img src="../img/dominadas.png" 
                                 alt="Ejercicio de dominadas">
                         <img src="../img/pesoMuertoConBarra.png" 
-                                alt="Ejercicio de peso muerto conBarra">
+                                alt="Ejercicio de peso muerto con Barra">
                         </div>
                 <!-- Sección para dar la bienvenida y empezar el reto -->
                 <section class="bienvenida">

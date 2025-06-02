@@ -40,7 +40,7 @@ try {
                 'apellido' => 'Abeledo Souto',
                 'correo' => 'abeledosoutoruben@gmail.com',
                 'contrasena' => 'admin',
-                'imagenPerfil' => 'https://cdn-icons-png.flaticon.com/512/17246/17246509.png'
+                'imagenPerfil' => '../img/EquipoDeTrabajo.png'
             ]
         ];
         // Consulta para insertar los datos en la tabla
