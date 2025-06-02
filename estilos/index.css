@@ -1,9 +1,9 @@
+/* Estilos para la página entera */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: 'Arial', sans-serif;
   background: linear-gradient(150deg,#1A237E, white);
@@ -14,7 +14,7 @@ body {
   text-align: center;
   padding: 20px; 
 }
-
+/* Estilos para el contenido de la página */
 .contenedor {
   background-color: white;
   padding: 40px;
@@ -27,12 +27,10 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 .logo {
   width: 200px;
   margin-bottom: 20px;
 }
-
 button {
   background-color: #1A237E;
   color: white;
@@ -44,26 +42,22 @@ button {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
 button:hover {
   background-color: #5153f7;
 }
-
 .mensajeBD {
   margin-top: 20px;
   font-size: 1.2rem;
   text-align: center;
 }
-
 .mensajeBD.correcto {
   color: green;
 }
-
 .mensajeBD.error {
   color: red;
 }
 
-
+/* Estilo media que sirve para derimensionar la página y verlo en teléfonos o tablets */
 @media (max-width: 600px) {
   .contenedor {
     padding: 20px;

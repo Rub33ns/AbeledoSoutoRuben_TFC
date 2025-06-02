@@ -1,3 +1,4 @@
+/* Estilos para la página entera */
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +14,7 @@ body {
   min-height: 100vh;
   padding: 20px;
 }
-
+/* Estilo para la caja general de el formulario */
 .cajaGeneral {
   width: 100%;
   max-width: 500px;
@@ -21,23 +22,23 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+/* Estilo para la caja de el formulario */
 .cajaFormulario {
   width: 100%;
   padding: 40px 30px;
   text-align: center;
-  background-color: #fff;
+  background-color: white;
   border-radius: 12px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
-
+/* Estilo para el logo de PlayFit */
 .logo {
   max-width: 100px;
   width: 100%;
   height: auto;
   margin-bottom: 20px;
 }
-
+/* Estilos para el contenido de el formulario */
 h2 {
   color: #1A237E;
   margin-bottom: 30px;
@@ -61,7 +62,7 @@ input[type="password"],
 input[type="email"],
 input[type="fotoPerfil"] {
   padding: 12px;
-  border: 1px solid #ccc;
+  border: 1px solid grey;
   border-radius: 8px;
   font-size: 14px;
   transition: border-color 0.3s;

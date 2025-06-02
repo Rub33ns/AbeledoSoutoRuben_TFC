@@ -1,29 +1,28 @@
-/* Estilo para todo el documento */
+/* Estilos para la página entera */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Estilo para la letra de el documento */
 body {
   font-family: 'Arial', sans-serif;
   background-color: #F8F9FA;
 }
 
-/* Contenedor principal */
+/* Estilos para el contenido de la página */
 .contenedorGeneral {
   display: flex;
   height: 100vh;
 }
 
-/* Estilo para el logo PlayFit rojo */
+/* Estilo para el logo de PlayFit */
 .logo {
   width: 170px;
   margin-bottom: 30px;
 }
 
-/* Estilos para el nav (parte izq ) */
+/* Estilos para el sidebar, nav en la parte izq */
 .sidebar {
   width: 220px;
   background-color: #1A237E;
@@ -42,7 +41,7 @@ body {
   font-weight: bold;
 }
 
-/* Estilo para el Div donde va todo el contenido que no es un sidebar */
+/* Estilo para el Contenido de la página */
 .contenidoPrincipal {
   flex: 1;
   padding: 20px;
@@ -111,34 +110,28 @@ body {
   color: #666;
 }
 
-/* ---------- Responsive ---------- */
+/* Estilos para redimensionar la pantalla en teléfonos o tablets */
 @media (max-width: 768px) {
   .contenedorGeneral {
-      flex-direction: column;
+    flex-direction: column;
+    height: auto;
   }
-
   .sidebar {
-      width: 100%;
-      border-right: none;
-      border-bottom: 1px solid #ddd;
-      flex-direction: row;
-      justify-content: space-around;
-      padding: 10px;
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
   }
-
   .sidebar nav ul {
-      display: flex;
-      gap: 10px;
-      justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
   }
-
   .sidebar nav ul li {
-      margin: 0;
-  }
-
-  .sidebar nav ul li a {
-      padding: 8px 12px;
-      font-size: 14px;
+    margin: 10px;
   }
 
   .contenidoPrincipal {
