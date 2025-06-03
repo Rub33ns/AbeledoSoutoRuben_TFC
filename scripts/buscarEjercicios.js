@@ -4,7 +4,7 @@ function cargarEjercicios() {
     const idParte = document.getElementById('parte').value;
     const nombreParte = document.getElementById('parte').selectedOptions[0].text;
     //Le hago una solicitud en este caso al controlador que me devuelve la parte de el cuerpo para utilizar el JSON
-    fetch('../controladores/listarEjerciciosPorParte.php?idParte=' + idParte)
+    fetch('../Controladores/listarEjerciciosPorParte.php?idParte=' + idParte)
         .then(res => res.json())
         .then(data => {
             //Actualizo el html para que e caso de que encuentre ejercicios me borre los anteriores y despues me los cargue actualizados.

@@ -1,6 +1,6 @@
 <?php
 session_start();
-require '../controladores/obtenerDatosUsuarios.php';
+require '../Controladores/obtenerDatosUsuarios.php';
 ?>
 
 <!DOCTYPE html>
@@ -25,14 +25,14 @@ require '../controladores/obtenerDatosUsuarios.php';
                     <li><a href="listadoEjercicios.php">Listado de ejercicios</a></li>
                     <li><a href="sobreNosotros.php">Sobre nosotros</a></li>
                     <li><a href="perfil.php">Perfil de Usuario</a></li>
-                    <li><a href="../controladores/cerrarSesion.php">Cerrar sesión</a></li>
+                    <li><a href="../Controladores/cerrarSesion.php">Cerrar sesión</a></li>
                 </ul>
             </nav>
         </aside>
         <main class="contenidoPrincipal">
             <div class="formularioModificar">
                 <h2>Modifica tus datos de usuario</h2>
-                <form action="../controladores/modificarUsuario.php" method="POST">
+                <form action="../Controladores/modificarUsuario.php" method="POST">
                     <label for="nombre">Nombre:</label><br>
                     <input type="text" id="nombre" name="nombre" required
                         value="<?php echo $user['nombre']; ?>"><br>

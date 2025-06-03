@@ -4,7 +4,7 @@ if (!isset($_SESSION['usuario'])) {
     header('Location: login.php');
     exit();
 }
-require_once '../controladores/conectarBD.php';
+require_once '../Controladores/conectarBD.php';
 
 $stmt = $pdo->query("SELECT id, nombre FROM parteCuerpo");
 $partes = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -30,14 +30,14 @@ $partes = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <li><a href="listadoEjercicios.php">Listado de ejercicios</a></li>
                     <li><a href="sobreNosotros.php">Sobre nosotros</a></li>
                     <li><a href="perfil.php">Perfil de Usuario</a></li>
-                    <li><a href="../controladores/cerrarSesion.php">Cerrar sesión</a></li>
+                    <li><a href="../Controladores/cerrarSesion.php">Cerrar sesión</a></li>
                 </ul>
             </nav>
         </aside>
         <main class="contenidoPrincipal">
             <div class="formularioCrearEjercicio">
                 <h2>Crear nuevo ejercicio</h2>
-                <form action="../controladores/guardarNuevoEjercicio.php" method="POST">
+                <form action="../Controladores/guardarNuevoEjercicio.php" method="POST">
                     <label>Nombre del Ejercicio:</label><br>
                     <input type="text" name="nombreEjercicio" required><br><br>
 

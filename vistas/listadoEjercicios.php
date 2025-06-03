@@ -4,7 +4,7 @@ if (!isset($_SESSION['usuario'])) {
     header('Location: login.php');
     exit();
 }
-require_once '../controladores/conectarBD.php';
+require_once '../Controladores/conectarBD.php';
 
 $stmt = $pdo->query("SELECT * FROM parteCuerpo ORDER BY nombre");
 $partesCuerpo = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -30,7 +30,7 @@ $partesCuerpo = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <li><a href="listadoEjercicios.php">Listado de ejercicios</a></li>
                     <li><a href="sobreNosotros.php">Sobre nosotros</a></li>
                     <li><a href="perfil.php">Perfil de Usuario</a></li>
-                    <li><a href="../controladores/cerrarSesion.php">Cerrar sesión</a></li>
+                    <li><a href="../Controladores/cerrarSesion.php">Cerrar sesión</a></li>
                 </ul>
             </nav>
         </aside>

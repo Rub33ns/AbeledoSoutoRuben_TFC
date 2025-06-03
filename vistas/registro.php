@@ -24,7 +24,7 @@ session_start();
         <?php unset($_SESSION['error']); ?>
       <?php endif; ?>
 
-      <form action="../controladores/registrarUsuario.php" method="POST">
+      <form action="../Controladores/registrarUsuario.php" method="POST">
         <label for="nombre">Nombre*:</label>
         <input type="text" id="nombre" name="nombre" required placeholder="Como mínimo 2 caracteres.">
 
