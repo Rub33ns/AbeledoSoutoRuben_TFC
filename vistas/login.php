@@ -20,7 +20,7 @@ if (isset($_GET['error'])) {
     <div class="cajaContenido">
       <img src="../img/LogoPlayfitForm.png" alt="Logo de PlayFit" class="logo">
       <h2>Bienvenido a PlayFit</h2>
-      <form action="../controladores/loguear.php" method="POST">
+      <form action="../Controladores/loguear.php" method="POST">
         <label for="correo">Correo:</label>
         <input type="email" id="correo" name="correo" required>
 

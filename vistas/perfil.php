@@ -5,7 +5,7 @@ if (!isset($_SESSION['usuario'])) {
     header('Location: login.php');
     exit();
 }
-require '../controladores/obtenerDatosUsuarios.php';
+require '../Controladores/obtenerDatosUsuarios.php';
 ?>
 
 <!DOCTYPE html>
@@ -28,7 +28,7 @@ require '../controladores/obtenerDatosUsuarios.php';
                 <li><a href="listadoEjercicios.php">Listado de ejercicios</a></li>
                 <li><a href="sobreNosotros.php">Sobre nosotros</a></li>
                 <li><a href="perfil.php">Perfil de Usuario</a></li>
-                <li><a href="../controladores/cerrarSesion.php">Cerrar sesión</a></li>
+                <li><a href="../Controladores/cerrarSesion.php">Cerrar sesión</a></li>
             </ul>
         </nav>
     </aside>
@@ -50,7 +50,7 @@ require '../controladores/obtenerDatosUsuarios.php';
                 <button type="submit">Modificar mis datos</button>
             </form>
 
-            <form action="../controladores/eliminarUsuario.php" method="POST" 
+            <form action="../Controladores/eliminarUsuario.php" method="POST" 
                     onsubmit="return confirm('¿Estás seguro de que quieres eliminar tu cuenta?');">
                 <button type="submit">Eliminar mi cuenta</button>
             </form>

@@ -20,7 +20,7 @@ try {
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     //Si llega por POST crearBD llamo a el controlador de crearTablas  y ejecutar el archivo para crearlas.
     if (isset($_POST['crearBD'])) {
-        include 'controladores/crearTablas.php';
+        include 'Controladores/CrearTablas.php';
         //Guardar el mensaje de exito para despues mostrarlo en el index
         $mensajeBD = 'Base de datos y tablas creadas correctamente.';
         $messageClass = 'correcto';
@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $pdo = new PDO('mysql:host=db;dbname=PlayFitBD', 'root', '');
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-            include 'controladores/InsertarDatos.php';
+            include 'Controladores/InsertarDatos.php';
             $mensajeBD = 'Datos insertados correctamente. Pulsa ir a login para comenzar!.';
             $messageClass = 'correcto';
             $stmt = $pdo->query('SELECT COUNT(*) FROM usuarios');

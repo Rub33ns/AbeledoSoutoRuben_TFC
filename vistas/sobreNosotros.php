@@ -27,7 +27,7 @@ if (!isset($_SESSION['usuario'])) {
           <li><a href="listadoEjercicios.php">Listado de ejercicios</a></li>
           <li><a href="sobreNosotros.php">Sobre nosotros</a></li>
           <li><a href="perfil.php">Perfil de Usuario</a></li>
-          <li><a href="../controladores/cerrarSesion.php">Cerrar sesión</a></li>
+          <li><a href="../Controladores/cerrarSesion.php">Cerrar sesión</a></li>
         </ul>
       </nav>
     </aside>
@@ -130,7 +130,7 @@ if (!isset($_SESSION['usuario'])) {
         <h3>Lenguajes Utilizados</h3>
        
           <p><strong>HTML:</strong>Utilizado para las vistas.</p>
-          <p><strong>PHP:</strong>Utilizado para las vistas y controladores.</p>
+          <p><strong>PHP:</strong>Utilizado para las vistas y Controladores.</p>
           <p><strong>JavaScript:</strong>Utilizado para trabajar con los 	formularios y las apis.</p>
           <p><strong>CSS:</strong>Utilizado para las vistas.</p>
         
