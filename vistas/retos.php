@@ -104,12 +104,10 @@ if (!isset($_SESSION['usuario'])) {
 
       </div>
     </main>
-  </div>
-
-  <footer class="footer">
-    <p>@Ruben Abeledo Souto</p>
+     <footer class="footer">
+    <p>&copy; Ruben Abeledo Souto</p>
   </footer>
-
+  </div>
   <script src="../scripts/generarRetos.js"></script>
 </body>
 </html>

@@ -20,7 +20,7 @@ $partes = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </head>
 
 <body>
-    <div class="contenedorGeneral" >
+    <div class="contenedorGeneral">
         <aside class="sidebar">
             <img src="../img/LogoPlayfit.png" alt="PlayFit Logo" class="logo">
             <nav>
@@ -61,10 +61,14 @@ $partes = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     </select><br><br>
 
                     <button type="submit">Guardar Ejercicio</button>
-                    <p><a href="listadoEjercicios.php" >Cancelar</a></p>
+                    <p><a href="listadoEjercicios.php">Cancelar</a></p>
                 </form>
             </div>
+            
         </main>
+        <footer class="footer">
+                <p>&copy; Ruben Abeledo Souto</p>
+            </footer>
     </div>
 </body>
 
