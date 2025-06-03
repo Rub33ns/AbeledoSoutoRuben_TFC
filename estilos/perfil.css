@@ -114,6 +114,16 @@ body {
     background-color: #5153f7;
 }
 
+.footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #f1f1f1;
+  font-size: 14px;
+  color: #555;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
 /* Estilos para redimensionar la pantalla en teléfonos o tablets */
 @media (max-width: 768px) {
  

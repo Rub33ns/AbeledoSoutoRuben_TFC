@@ -11,14 +11,16 @@ $partesCuerpo = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>PlayFit | Listado de Ejercicios</title>
     <link rel="stylesheet" href="../estilos/listados.css">
     <script src="../scripts/playlist.js" defer></script>
-    <script src="../scripts/buscarEjercicios.js" defer></script> 
+    <script src="../scripts/buscarEjercicios.js" defer></script>
     <link rel="shortcut icon" href="../img/IconoPlayFit.png" type="image/x-icon">
 </head>
+
 <body>
     <div class="contenedorGeneral">
         <aside class="sidebar">
@@ -37,7 +39,7 @@ $partesCuerpo = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         <main class="contenidoPrincipal">
             <div class="contenedorCrearEjercicios">
-                 <a href="crearEjercicios.php" class="botonCrear">Crear Nuevo Ejercicio</a>
+                <a href="crearEjercicios.php" class="botonCrear">Crear Nuevo Ejercicio</a>
             </div>
 
             <form style="margin: 20px;">
@@ -49,12 +51,18 @@ $partesCuerpo = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <?php endforeach; ?>
                 </select>
             </form>
-                <h1>Playlist recomendadas:</h1>
-                <div id="playlistsSpotify" class="contenedorDeCartas"></div>
-                <div class="separador"></div>
-                <h1>Ejercicios sobre la parte seleccionada:</h1>
-                <div id="ejercicios" class="contenedorDeCartas"></div>
+            <h1>Playlist recomendadas:</h1>
+            <div id="playlistsSpotify" class="contenedorDeCartas"></div>
+            <div class="separador"></div>
+            <h1>Ejercicios sobre la parte seleccionada:</h1>
+            <div id="ejercicios" class="contenedorDeCartas"></div>
+            
+          
         </main>
+          <footer class="footer">
+                <p>&copy; Ruben Abeledo Souto</p>
+            </footer>
     </div>
 </body>
+
 </html>

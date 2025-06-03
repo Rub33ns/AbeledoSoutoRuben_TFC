@@ -21,7 +21,7 @@ if (!isset($_SESSION['usuario'])) {
     <aside class="sidebar">
       <img src="../img/LogoPlayfit.png" alt="PlayFit Logo" class="logo">
       <nav>
-       <ul>
+        <ul>
           <li><a href="inicio.php">Inicio</a></li>
           <li><a href="retos.php">Reto Semanal</a></li>
           <li><a href="listadoEjercicios.php">Listado de ejercicios</a></li>
@@ -47,11 +47,13 @@ if (!isset($_SESSION['usuario'])) {
           del cuerpo que quieras entrenar.</p>
         <br>
         <h3>¿Cuál es la idea?</h3>
-        <p>La idea de PlayFit es crear una página web junto a la ayuda de APIs, que fomente la realización de ejercicio físico mediante retos diarios.
+        <p>La idea de PlayFit es crear una página web junto a la ayuda de APIs, que fomente la realización de ejercicio
+          físico mediante retos diarios.
         </p>
         <br>
         <h3>¿Hacia quién va dirigido?</h3>
-        <p>PlayFit no está enfocado a un público concreto, en un inicio estaba pensado principalmente para ayudar a empresas como
+        <p>PlayFit no está enfocado a un público concreto, en un inicio estaba pensado principalmente para ayudar a
+          empresas como
           centros de rehabilitación y gimnasios, pero podría utilizar la web todo el que quisiera.</p>
         <br>
         <h3>¿Cuál es el origen?</h3>
@@ -63,77 +65,78 @@ if (!isset($_SESSION['usuario'])) {
         <h2>Tecnologías Utilizadas</h2>
         <br>
         <h3>APIs Utilizadas</h3>
-       
-          <p><strong>Nombre:</strong> ExerciseDB API</p>
-          <p><strong> Información de la api:</strong> <a
-              href="https://github.com/cyberboyanmol/exercisedb-api">ExerciseDB GitHub</a></p>
-          <p><strong>Acceso a través de:</strong> <a href="https://rapidapi.com/hub">RapidApi</a></p>
-          <p><strong>Tipo de licencia:</strong> MIT Copyright (c) 2024 Anmol Gangwar</p>
-          <p> <strong>Utilidaz de esta Api:</strong> Principalmente la uso para generar ejercicios aleatorios con su
-            nombre, descripción, imagen/gif.</p>
-        
+
+        <p><strong>Nombre:</strong> ExerciseDB API</p>
+        <p><strong> Información de la api:</strong> <a href="https://github.com/cyberboyanmol/exercisedb-api">ExerciseDB
+            GitHub</a></p>
+        <p><strong>Acceso a través de:</strong> <a href="https://rapidapi.com/hub">RapidApi</a></p>
+        <p><strong>Tipo de licencia:</strong> MIT Copyright (c) 2024 Anmol Gangwar</p>
+        <p> <strong>Utilidaz de esta Api:</strong> Principalmente la uso para generar ejercicios aleatorios con su
+          nombre, descripción, imagen/gif.</p>
+
         <br>
         <hr>
         <br>
-       
-          <p><strong>Nombre:</strong> Spotify Web API</p>
-          <p><strong> Información de la api:</strong> <a
-              href="https://developer.spotify.com/documentation/web-api/">Spotify Web API Docs</a></p>
-          <p><strong>Acceso a través de:</strong> <a href="https://developer.spotify.com/dashboard/">Spotify Developer
-              Dashboard</a></p>
-          <p><strong>Tipo de licencia:</strong> Propietaria, bajo los términos de uso de Spotify</p>
-          <p> <strong>Utilidad de esta Api:</strong> Esta api la utilizo para generar playlist dependiendo del tipo
-            de ejercicio que selecciones.</p>
-        
+
+        <p><strong>Nombre:</strong> Spotify Web API</p>
+        <p><strong> Información de la api:</strong> <a
+            href="https://developer.spotify.com/documentation/web-api/">Spotify Web API Docs</a></p>
+        <p><strong>Acceso a través de:</strong> <a href="https://developer.spotify.com/dashboard/">Spotify Developer
+            Dashboard</a></p>
+        <p><strong>Tipo de licencia:</strong> Propietaria, bajo los términos de uso de Spotify</p>
+        <p> <strong>Utilidad de esta Api:</strong> Esta api la utilizo para generar playlist dependiendo del tipo
+          de ejercicio que selecciones.</p>
+
         <br>
         <hr>
         <br>
         <h3>Imágenes Playfit</h3>
-       
-          <p>Todas las imágenes utilizadas en este proyecto han sido generadas mediante inteligencia artificial.</p>
-          <p>De acuerdo con los Términos de uso de OpenAI, tengo pleno derecho a utilizarlas, modificarlas y
-            distribuirlas libremente, incluso con fines comerciales.</p>
-          <p><strong>Licencia de uso:</strong> OpenAI.</p>
-        
+
+        <p>Todas las imágenes utilizadas en este proyecto han sido generadas mediante inteligencia artificial.</p>
+        <p>De acuerdo con los Términos de uso de OpenAI, tengo pleno derecho a utilizarlas, modificarlas y
+          distribuirlas libremente, incluso con fines comerciales.</p>
+        <p><strong>Licencia de uso:</strong> OpenAI.</p>
+
         <br>
         <hr>
         <br>
         <h3>Herramientas de desarrollo</h3>
-       
-          <p>Visual Studio Code</p>
-        
+
+        <p>Visual Studio Code</p>
+
         <br>
         <hr>
         <br>
         <h3>Base de Datos</h3>
-       
-          <p>phpMyAdmin</p>
-        
+
+        <p>phpMyAdmin</p>
+
         <br>
         <hr>
         <br>
         <h3>Control de Versiones</h3>
-       
-          <p><strong>GitHub:</strong> Utilizo este control de versiones para guardar la estructura y contenido de el
-            proyecto</p>
-        
+
+        <p><strong>GitHub:</strong> Utilizo este control de versiones para guardar la estructura y contenido de el
+          proyecto</p>
+
         <br>
         <hr>
         <br>
         <h3>Despliegue del proyecto</h3>
-       
-          <p><strong>Docker:</strong>Utilizo docker para desplegar mi proyecto con un Docker-compose.yml y un DockerFile</p>
-        
+
+        <p><strong>Docker:</strong>Utilizo docker para desplegar mi proyecto con un Docker-compose.yml y un DockerFile
+        </p>
+
         <br>
         <hr>
         <br>
         <h3>Lenguajes Utilizados</h3>
-       
-          <p><strong>HTML:</strong>Utilizado para las vistas.</p>
-          <p><strong>PHP:</strong>Utilizado para las vistas y Controladores.</p>
-          <p><strong>JavaScript:</strong>Utilizado para trabajar con los 	formularios y las apis.</p>
-          <p><strong>CSS:</strong>Utilizado para las vistas.</p>
-        
+
+        <p><strong>HTML:</strong>Utilizado para las vistas.</p>
+        <p><strong>PHP:</strong>Utilizado para las vistas y Controladores.</p>
+        <p><strong>JavaScript:</strong>Utilizado para trabajar con los formularios y las apis.</p>
+        <p><strong>CSS:</strong>Utilizado para las vistas.</p>
+
 
 
       </div>
@@ -149,7 +152,9 @@ if (!isset($_SESSION['usuario'])) {
           </div>
         </div>
       </div>
-
+      <footer class="footer">
+        <p>&copy; Ruben Abeledo Souto</p>
+      </footer>
     </main>
   </div>
 
