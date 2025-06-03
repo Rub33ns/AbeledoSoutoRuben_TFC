@@ -8,7 +8,7 @@ try {
     $conexion = new PDO($dsn, $username, $password);
     $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     // Ruta donde se almacena el documento SQL que contiene los datos predefinidos en la BD
-    $file = 'bd/DatosBD.sql';
+    $file = 'BD/DatosBD.sql';
     // Si no existe el documento, mostrar mensaje de no encontrado.
     if (!file_exists($file)) {
         throw new Exception("El archivo $file no existe.");

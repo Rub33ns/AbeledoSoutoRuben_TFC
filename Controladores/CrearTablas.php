@@ -16,7 +16,7 @@ try {
     //Conectar con la base de datos
     $pdo = new PDO($dsn, $user, $pass, $options);
     //Archivo de donde va a sacar las tablas de la base de datos. Es el SQL
-    $file = 'bd/TablaBD.sql'; 
+    $file = 'BD/TablaBD.sql'; 
     //En caso de que el archivo no exista generar un nuevo error
     if (!file_exists($file)) {
         throw new Exception("El archivo $file no existe.");
