@@ -1,0 +1,154 @@
+/* Estilos para la página entera */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(150deg, #1A237E, white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+/* Estilo para la caja general de el formulario */
+.cajaGeneral {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Estilo para la caja de el formulario */
+.cajaFormulario {
+  width: 100%;
+  padding: 40px 30px;
+  text-align: center;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+/* Estilo para el logo de PlayFit */
+.logo {
+  max-width: 100px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+/* Estilos para el contenido de el formulario */
+
+.mensajeError{
+  color: red;
+}
+h2 {
+  color: #1A237E;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  text-align: left;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="fotoPerfil"] {
+  padding: 12px;
+  border: 1px solid grey;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+  width: 100%;
+}
+
+input:hover {
+  border-color: #1A237E;
+  outline: none;
+}
+
+button {
+  padding: 12px;
+  background-color: #1A237E;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #5153f7;
+}
+
+p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+p a {
+  color: #1A237E;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+@media (max-width: 700px) {
+  .cajaFormulario {
+    padding: 30px 20px;
+  }
+
+  .logo {
+    max-width: 80px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  input,
+  button {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cajaFormulario {
+    padding: 20px 15px;
+  }
+
+  .logo {
+    max-width: 60px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  input {
+    padding: 10px;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+}

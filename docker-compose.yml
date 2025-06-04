@@ -1,0 +1,40 @@
+version: '3.8'  # Versión del archivo de configuración de Docker Compose
+
+services:
+  # Servicio principal de la aplicación web 
+  web:
+    build: .  # Construir la imagen usando el Dockerfile que está en esta misma carpeta
+    ports:
+      - "8888:80"  # Acceder a la página con este enlace http://playfit.com:8888/
+    volumes:
+      - .:/var/www/html  # Ruta donde se guarda el proyecto
+    container_name: Playfit-app-php  # Nombre del contenedor
+    depends_on:
+      - db  
+
+  # Servicio de base de datos MySQL
+  db:
+    image: mysql:8  # Usa la imagen oficial de MySQL versión 8
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: yes  #(Entrar con usuario ROOT sin contraseña)
+      MYSQL_DATABASE: PlayFitBD  # Crea automáticamente una base de datos con este nombre
+      MYSQL_ROOT_HOST: '%'  # Permitir que se conecte todo el mundo
+    ports:
+      - "3306:3306"  # Expone el puerto por defecto de MySQL, para que puedas conectarte desde fuera
+    volumes:
+      - dbdata:/var/lib/mysql  
+      - ./docker/mysql-init:/docker-entrypoint-initdb.d
+    container_name: Playfit-db  # Nombre personalizado para el contenedor de base de datos
+
+  # Servicio de base de datos: phpMyAdmin
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin  # Imagen oficial de phpMyAdmin
+    ports:
+      - "8080:80"  #Puerto para acceder con http//localhost:8080
+    environment:
+      PMA_HOST: db  # Nombre de el host con el que voy a conectar la Bd
+    depends_on:
+      - db  
+    container_name: PlayfitBD.com  # Nombre del contenedor para phpMyAdmin
+volumes:
+  dbdata:  
