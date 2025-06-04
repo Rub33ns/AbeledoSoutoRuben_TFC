@@ -115,11 +115,35 @@ input[type="email"] {
 
 .footer {
   text-align: center;
-  padding: 15px;
+  padding: 8px;
   background-color: #f1f1f1;
   font-size: 14px;
   color: #555;
   position: fixed;
   bottom: 0;
   width: 100%;
+}
+@media (max-width: 768px) {
+ 
+    .contenedorGeneral {
+    flex-direction: column;
+    height: auto;
+  }
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  .sidebar nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+  .sidebar nav ul li {
+    margin: 10px;
+  }
 }

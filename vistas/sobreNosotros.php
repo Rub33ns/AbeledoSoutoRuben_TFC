@@ -152,10 +152,11 @@ if (!isset($_SESSION['usuario'])) {
           </div>
         </div>
       </div>
-      <footer class="footer">
+      
+    </main>
+    <footer class="footer">
         <p>&copy; Ruben Abeledo Souto</p>
       </footer>
-    </main>
   </div>
 
 </body>
