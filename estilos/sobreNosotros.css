@@ -59,7 +59,7 @@ body {
 }
 
 .bienvenida h1 {
-  font-size: 2.5rem;
+  font-size: 40px;
   color: black;
   margin-bottom: 10px;
 }
@@ -81,7 +81,7 @@ body {
 
 .sobreNosotrosDatos p {
   color: #666;
-  font-size: 1rem;
+  font-size: 14px;
 }
 
 .equipoDeTrabajo {
@@ -176,12 +176,12 @@ body {
   }
 
   .sidebar nav ul li a {
-      font-size: 13px;
+      font-size: 14px;
       padding: 6px 10px;
   }
 
   .bienvenida h1 {
-      font-size: 1.8rem;
+      font-size: 20px;
   }
 
   .sobreNosotrosDatos {

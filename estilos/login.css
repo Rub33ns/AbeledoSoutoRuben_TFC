@@ -82,7 +82,7 @@ button {
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 14px;
   transition: background-color 0.3s ease;
 }
 
@@ -118,13 +118,13 @@ p a:hover {
   }
 
   h2 {
-    font-size: 1.8rem;
+    font-size:14px;
     margin-bottom: 20px;
   }
 
   input[type="text"],
   input[type="password"] {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   button {
@@ -142,7 +142,7 @@ p a:hover {
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 14px;
   }
 
   input[type="text"],
@@ -152,10 +152,10 @@ p a:hover {
 
   button {
     padding: 10px;
-    font-size: 13px;
+    font-size: 14px;
   }
 
   p {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
